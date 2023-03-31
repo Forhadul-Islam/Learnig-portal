@@ -14,18 +14,30 @@ import Quizzes from "./pages/admin/Quizzes";
 import RequireAuth from "./components/require-auth/RequireAuth";
 import PublicRoute from "./components/public-route/publicRoute";
 import Navbar from "./components/navbar/Navbar";
+import { store } from "./app/store";
+import { Provider } from "react-redux";
+import Login from "./pages/Login";
+import useAuthCheck from "./hooks/useAuthCheck";
+import Register from "./pages/Register";
+import Loader from "./components/ui/Loader";
 
 function App() {
-  const auth = undefined;
-  // const auth = { name: "foo", role: "student" };
+  const authChecked = useAuthCheck();
+
+  if (!authChecked)
+    return (
+      <div className="h-[100vh] flex items-center justify-center">
+        <Loader />
+      </div>
+    );
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<PublicRoute auth={auth} />}>
+          <Route path="/" element={<PublicRoute />}>
             <Route path="/" element={<Home />} />
-            <Route path="/login" element={<StudentLogin />} />
-            <Route path="/register" element={<StudentRegistration />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Route>
           //student's route
           <Route
@@ -33,19 +45,16 @@ function App() {
             element={
               <>
                 <Navbar />
-                <RequireAuth allowedRole="student" auth={auth} />
+                <RequireAuth allowedRole="student" />
               </>
             }
           >
             <Route path="leader-board" element={<LeaderBoard />} />
-            <Route path="course-player" element={<CoursePlayer />} />
-            <Route path="quiz" element={<Quiz />} />
+            <Route path="course-player/:videoId" element={<CoursePlayer />} />
+            <Route path="quizzes/:videoId" element={<Quiz />} />
           </Route>
           //Admin's route
-          <Route
-            path="/admin/*"
-            element={<RequireAuth allowedRole="admin" auth={auth} />}
-          >
+          <Route path="/admin/*" element={<RequireAuth allowedRole="admin" />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="assignment" element={<Assignment />} />
             <Route path="assignment-mark" element={<AssignmentMark />} />

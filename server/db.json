@@ -48,6 +48,20 @@
       "role": "student",
       "name": "Arif",
       "id": 7
+    },
+    {
+      "email": "mizanur@gmail.com",
+      "password": "$2a$10$6ALmAe0TdmLz3skWYNrSLeSWSmL6Y3IT/X0S8TfZHM/HX9kOoDuoW",
+      "name": "Mizanur",
+      "role": "student",
+      "id": 8
+    },
+    {
+      "email": "mizanforhad@yahoo.com",
+      "password": "$2a$10$g2bBqT/nAOxQrg0/dpGQT.y0bfH7FnqCJw/MQvQiCe9bgE8keeGm2",
+      "name": "Mizaanur Rahaman",
+      "role": "student",
+      "id": 9
     }
   ],
   "videos": [
@@ -222,6 +236,28 @@
       "totalWrong": 1,
       "totalMark": 10,
       "mark": 5
+    },
+    {
+      "student_id": 8,
+      "student_name": "Mizanur",
+      "video_id": "1",
+      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "totalQuiz": 2,
+      "totalWrong": 0,
+      "totalMark": 10,
+      "mark": 10,
+      "id": 2
+    },
+    {
+      "student_id": 8,
+      "student_name": "Mizanur",
+      "video_id": "2",
+      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
+      "totalQuiz": 1,
+      "totalWrong": 1,
+      "totalMark": 5,
+      "mark": 0,
+      "id": 3
     }
   ]
 }

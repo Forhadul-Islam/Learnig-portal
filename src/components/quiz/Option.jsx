@@ -1,10 +1,15 @@
 import React from "react";
 
-const Option = () => {
+const Option = ({ id, option, handleChecked, onChange }) => {
   return (
-    <label for="option2_q12">
-      <input type="checkbox" id="option2_q12" />A function that is called after
-      a certain time interval
+    <label htmlFor={id}>
+      <input
+        type="checkbox"
+        onChange={(e) => onChange(e.target.checked)}
+        id={id}
+        checked={handleChecked()}
+      />
+      {option}
     </label>
   );
 };
