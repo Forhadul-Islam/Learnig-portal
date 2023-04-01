@@ -62,6 +62,13 @@
       "name": "Mizaanur Rahaman",
       "role": "student",
       "id": 9
+    },
+    {
+      "email": "fake@gmail.com",
+      "password": "$2a$10$4ijUI3BcsChNh2d0jLo8CeHZYEj6.mqw.yswssoWQSAgv.99JVcwq",
+      "name": "Fake person",
+      "role": "student",
+      "id": 10
     }
   ],
   "videos": [
@@ -222,6 +229,30 @@
       "mark": 50,
       "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
       "status": "published"
+    },
+    {
+      "assignment_id": 2,
+      "title": "Assignment 2 - Implement Best Practices",
+      "student_name": "Mizanur",
+      "student_id": 8,
+      "totalMark": 100,
+      "mark": 0,
+      "repo_link": "fgdg",
+      "live_link": "fsdfsdf",
+      "status": "pending",
+      "id": 3
+    },
+    {
+      "assignment_id": 1,
+      "title": "Assignment 1 - Implement Debounce Function",
+      "student_name": "Mizanur",
+      "student_id": 8,
+      "totalMark": 100,
+      "mark": 0,
+      "repo_link": "test repo link",
+      "live_link": "test live link",
+      "status": "pending",
+      "id": 4
     }
   ],
   "quizMark": [
@@ -240,12 +271,12 @@
     {
       "student_id": 8,
       "student_name": "Mizanur",
-      "video_id": "1",
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 2,
-      "totalWrong": 0,
-      "totalMark": 10,
-      "mark": 10,
+      "video_id": "2",
+      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
+      "totalQuiz": 1,
+      "totalWrong": 1,
+      "totalMark": 5,
+      "mark": 0,
       "id": 2
     },
     {
@@ -254,10 +285,21 @@
       "video_id": "2",
       "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
       "totalQuiz": 1,
-      "totalWrong": 1,
+      "totalWrong": 0,
       "totalMark": 5,
-      "mark": 0,
+      "mark": 5,
       "id": 3
+    },
+    {
+      "student_id": 8,
+      "student_name": "Mizanur",
+      "video_id": "1",
+      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "totalQuiz": 2,
+      "totalWrong": 1,
+      "totalMark": 10,
+      "mark": 5,
+      "id": 4
     }
   ]
 }

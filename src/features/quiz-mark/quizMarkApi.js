@@ -15,20 +15,22 @@ const quizMarkApi = apiSlice.injectEndpoints({
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const { data } = await queryFulfilled;
-          if (data?.id) {
-            dispatch(
-              apiSlice.util.updateQueryData(
-                "getQuizMarksByStudentAndVideoId",
-                { video_id: data?.video_id, student_id: data?.student_id },
-                (draft) => {
-                  console.log(JSON.stringify(draft));
-                  draft.push(data);
-                  console.log(JSON.stringify(draft));
-                }
-              )
-            );
-          }
+          const { data: submittedQuiz } = await queryFulfilled;
+          const queryArg = {
+            video_id: submittedQuiz.video_id,
+            student_id: submittedQuiz.student_id,
+          };
+          dispatch(
+            apiSlice.util.updateQueryData(
+              "getQuizMarksByStudentAndVideoId",
+              queryArg,
+              (draft) => {
+                console.log(JSON.stringify(draft));
+                draft.push(submittedQuiz);
+                console.log(JSON.stringify(draft));
+              }
+            )
+          );
         } catch (err) {}
       },
     }),

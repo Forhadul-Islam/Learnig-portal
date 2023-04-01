@@ -39,7 +39,7 @@ const Video = () => {
       <div>
         <Player video={video} />
         <VideoDetails video={video} />
-        <AssignmentSubmitModal />
+        {/* <AssignmentSubmitModal /> */}
       </div>
     );
   }
