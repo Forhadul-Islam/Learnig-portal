@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import { useGetVideosQuery } from "../../features/videos/videosApi";
 import VideoTableRow from "../../components/admin/videos/VideoTableRow";
+import { Link } from "react-router-dom";
 
 const Videos = () => {
   const {
@@ -24,12 +25,19 @@ const Videos = () => {
     });
   return (
     <div>
-      <Navbar />
       <section className=" py-6 bg-primary">
         <div className="mx-auto max-w-full px-5 lg:px-20">
           <div className="px-3 py-20 bg-opacity-10">
             <div className="w-full flex">
-              <button className="btn ml-auto">Add Video</button>
+              <Link
+                to={{
+                  pathname: "/admin/videos/create",
+                  state: { title: "Add New Video" },
+                }}
+                className="btn ml-auto"
+              >
+                Add Video
+              </Link>
             </div>
             <div className="overflow-x-auto mt-4">
               <table className="divide-y-1 text-base divide-gray-600 w-full">

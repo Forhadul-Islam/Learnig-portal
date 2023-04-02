@@ -5,7 +5,6 @@ import Navbar from "../../components/navbar/Navbar";
 const Dashboard = () => {
   return (
     <>
-      <Navbar />
       <section className="py-6 bg-primary">
         <div className="mx-auto max-w-7xl px-5 lg:px-0">
           <div className="px-3 md:lg:xl:px-40  py-20 bg-opacity-10">

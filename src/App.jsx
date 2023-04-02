@@ -1,7 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import StudentLogin from "./pages/student/StudentLogin";
-import StudentRegistration from "./pages/student/StudentRegistration";
 import LeaderBoard from "./pages/student/LeaderBoard";
 import CoursePlayer from "./pages/student/CoursePlayer";
 import Quiz from "./pages/student/Quiz";
@@ -14,14 +12,12 @@ import Quizzes from "./pages/admin/Quizzes";
 import RequireAuth from "./components/require-auth/RequireAuth";
 import PublicRoute from "./components/public-route/publicRoute";
 import Navbar from "./components/navbar/Navbar";
-import { store } from "./app/store";
-import { Provider } from "react-redux";
 import Login from "./pages/Login";
 import useAuthCheck from "./hooks/useAuthCheck";
 import Register from "./pages/Register";
 import Loader from "./components/ui/Loader";
 import NotFound from "./pages/NotFound";
-import CreateVideo from "./pages/admin/CreateVideo";
+import CreateAndEditVideo from "./pages/admin/CreateAndEditVideo";
 
 function App() {
   const authChecked = useAuthCheck();
@@ -56,13 +52,24 @@ function App() {
             <Route path="quizzes/:videoId" element={<Quiz />} />
           </Route>
           //Admin's route
-          <Route path="/admin/*" element={<RequireAuth allowedRole="admin" />}>
+          <Route
+            path="/admin/*"
+            element={
+              <>
+                <Navbar />
+                <RequireAuth allowedRole="admin" />
+              </>
+            }
+          >
             <Route path="" element={<Dashboard />} />
             <Route path="assignment" element={<Assignment />} />
             <Route path="assignment-mark" element={<AssignmentMark />} />
             <Route path="videos/" element={<Videos />} />
-            <Route path="videos/create" element={<CreateVideo />} />
-            <Route path="videos/edit/:videoId" element={<CreateVideo />} />
+            <Route path="videos/create" element={<CreateAndEditVideo />} />
+            <Route
+              path="videos/edit/:videoId"
+              element={<CreateAndEditVideo />}
+            />
             <Route path="quizzes" element={<Quizzes />} />
           </Route>
           {/* <Route path="*" element={<NotFound />} /> */}
