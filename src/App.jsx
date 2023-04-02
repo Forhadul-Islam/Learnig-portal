@@ -20,6 +20,8 @@ import Login from "./pages/Login";
 import useAuthCheck from "./hooks/useAuthCheck";
 import Register from "./pages/Register";
 import Loader from "./components/ui/Loader";
+import NotFound from "./pages/NotFound";
+import CreateVideo from "./pages/admin/CreateVideo";
 
 function App() {
   const authChecked = useAuthCheck();
@@ -55,12 +57,15 @@ function App() {
           </Route>
           //Admin's route
           <Route path="/admin/*" element={<RequireAuth allowedRole="admin" />}>
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="" element={<Dashboard />} />
             <Route path="assignment" element={<Assignment />} />
             <Route path="assignment-mark" element={<AssignmentMark />} />
-            <Route path="videos" element={<Videos />} />
+            <Route path="videos/" element={<Videos />} />
+            <Route path="videos/create" element={<CreateVideo />} />
+            <Route path="videos/edit/:videoId" element={<CreateVideo />} />
             <Route path="quizzes" element={<Quizzes />} />
           </Route>
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </Router>
     </>

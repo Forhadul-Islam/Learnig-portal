@@ -253,6 +253,30 @@
       "live_link": "test live link",
       "status": "pending",
       "id": 4
+    },
+    {
+      "assignment_id": 1,
+      "title": "Assignment 1 - Implement Debounce Function",
+      "student_name": "Fake person",
+      "student_id": 10,
+      "totalMark": 100,
+      "mark": 0,
+      "repo_link": "test repo link",
+      "live_link": "test live link 2",
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "assignment_id": 2,
+      "title": "Assignment 2 - Implement Best Practices",
+      "student_name": "Fake person",
+      "student_id": 10,
+      "totalMark": 100,
+      "mark": 0,
+      "repo_link": "test repo 2",
+      "live_link": "test live link",
+      "status": "pending",
+      "id": 6
     }
   ],
   "quizMark": [
@@ -300,6 +324,28 @@
       "totalMark": 10,
       "mark": 5,
       "id": 4
+    },
+    {
+      "student_id": 10,
+      "student_name": "Fake person",
+      "video_id": "1",
+      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "totalQuiz": 2,
+      "totalWrong": 2,
+      "totalMark": 10,
+      "mark": 0,
+      "id": 5
+    },
+    {
+      "student_id": 10,
+      "student_name": "Fake person",
+      "video_id": "2",
+      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
+      "totalQuiz": 1,
+      "totalWrong": 1,
+      "totalMark": 5,
+      "mark": 0,
+      "id": 6
     }
   ]
 }

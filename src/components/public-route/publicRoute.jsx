@@ -9,7 +9,7 @@ const PublicRoute = () => {
   if (auth?.role == "student") {
     return <Navigate to="/course-player/1" replace />;
   } else if (auth?.role == "admin") {
-    return <Navigate to="/admin/dashboard" replace />;
+    return <Navigate to="/admin" replace />;
   } else return <Outlet />;
 };
 

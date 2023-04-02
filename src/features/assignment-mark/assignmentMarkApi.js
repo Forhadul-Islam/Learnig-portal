@@ -2,17 +2,27 @@ import apiSlice from "../api/apiSlice";
 
 const assignmentMarkApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
-    getAllAssignmentMark: builder.query({
+    // get all assignment mark
+    getAssignmentMark: builder.query({
       query: () => "/assignmentMark",
     }),
-    getAssignmentMarkByVideoAndStudentId: builder.query({
-      query: ({ video_id, student_id }) =>
-        `/assignmentMark?video_id=${video_id}&student_id=${student_id}`,
-    }),
+
+    //get assignment by st_id and ass_id
     getAssignmentMarkByAssignmentIdAndStudentId: builder.query({
       query: ({ assignment_id, student_id }) =>
         `/assignmentMark?assignment_id=${assignment_id}&student_id=${student_id}`,
     }),
+
+    //admin will update assignment mark
+    updateAssignmentMark: builder.mutation({
+      query: ({ id, data }) => ({
+        url: `/assignmentMark/${id}`,
+        method: "PUT",
+        body: data,
+      }),
+    }),
+
+    //assignment submitted by student
     submitAssignment: builder.mutation({
       query: (data) => ({
         url: "/assignmentMark",
@@ -44,8 +54,8 @@ const assignmentMarkApi = apiSlice.injectEndpoints({
 });
 
 export const {
-  useGetAllAssignmentMarkQuery,
-  useGetAssignmentMarkByVideoAndStudentIdQuery,
+  useGetAssignmentMarkQuery,
   useSubmitAssignmentMutation,
+  useUpdateAssignmentMarkMutation,
   useGetAssignmentMarkByAssignmentIdAndStudentIdQuery,
 } = assignmentMarkApi;

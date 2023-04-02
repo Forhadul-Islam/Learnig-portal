@@ -1,7 +1,8 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 const VideoLIstItem = ({ video }) => {
+  const { videoId } = useParams();
   const navigate = useNavigate();
   const { id, title, views, duration } = video;
   const handleVideoPlay = () => {
@@ -10,7 +11,9 @@ const VideoLIstItem = ({ video }) => {
   return (
     <Link
       to={`/course-player/${id}`}
-      className="w-full flex flex-row gap-2 cursor-pointer hover:bg-slate-900 p-2 py-3"
+      className={` ${id == videoId && "bg-indigo-800"} ${
+        id != videoId && "hover:bg-slate-900"
+      }  w-full flex flex-row gap-2 cursor-pointer  p-2 py-3`}
     >
       {/* <!-- Thumbnail --> */}
       <svg
