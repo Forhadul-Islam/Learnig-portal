@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import { useGetVideosQuery } from "../../features/videos/videosApi";
-import VideoTableRow from "../../components/admin/videos/VideoTableRow";
 import { Link } from "react-router-dom";
+import Loader from "../../components/ui/Loader";
+import VideosListTable from "../../components/admin/videos/videosListTable";
 
 const Videos = () => {
   const {
@@ -15,14 +16,27 @@ const Videos = () => {
 
   //decide what to render
   let content = null;
-  if (isLoading) content = <div>Loading...</div>;
+  if (isLoading)
+    content = (
+      <div className="flex justify-center  mt-10">
+        <Loader />
+      </div>
+    );
   if (isError && error?.data) content = <div>Something wrong!</div>;
   if (isSuccess && videos.length === 0)
-    content = <div>Yet no videos are added.</div>;
+    content = (
+      <div className="bg-gray-800 text-center mt-10 py-4 h-32 ">
+        Yet no videos are added.
+        <Link
+          to="/admin/videos/create"
+          className="block mx-auto bg-blue-700 px-2 rounded-full w-28 mt-3"
+        >
+          Add Video
+        </Link>
+      </div>
+    );
   if (isSuccess && videos.length > 0)
-    content = videos.map((video) => {
-      return <VideoTableRow key={video.id} video={video} />;
-    });
+    content = <VideosListTable videos={videos} />;
   return (
     <div>
       <section className=" py-6 bg-primary">
@@ -30,29 +44,14 @@ const Videos = () => {
           <div className="px-3 py-20 bg-opacity-10">
             <div className="w-full flex">
               <Link
-                to={{
-                  pathname: "/admin/videos/create",
-                  state: { title: "Add New Video" },
-                }}
+                to={"/admin/videos/create"}
+                state={{ title: "Add New Video" }}
                 className="btn ml-auto"
               >
                 Add Video
               </Link>
             </div>
-            <div className="overflow-x-auto mt-4">
-              <table className="divide-y-1 text-base divide-gray-600 w-full">
-                <thead>
-                  <tr>
-                    <th className="table-th">Video Title</th>
-                    <th className="table-th">Description</th>
-                    <th className="table-th">Action</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-600/50">
-                  {content}
-                </tbody>
-              </table>
-            </div>
+            <div className="overflow-x-auto mt-4">{content}</div>
           </div>
         </div>
       </section>

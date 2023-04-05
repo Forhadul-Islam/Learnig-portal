@@ -65,10 +65,13 @@ function App() {
             <Route path="assignment" element={<Assignment />} />
             <Route path="assignment-mark" element={<AssignmentMark />} />
             <Route path="videos/" element={<Videos />} />
-            <Route path="videos/create" element={<CreateAndEditVideo />} />
+            <Route
+              path="videos/create"
+              element={<CreateAndEditVideo mode="create" />}
+            />
             <Route
               path="videos/edit/:videoId"
-              element={<CreateAndEditVideo />}
+              element={<CreateAndEditVideo mode="edit" />}
             />
             <Route path="quizzes" element={<Quizzes />} />
           </Route>
