@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDeleteVideoMutation } from "../../../features/videos/videosApi";
+import { useDeleteAssignmentMutation } from "../../../features/assignments/assignmentsApi";
 
-const VideoTableRow = ({ video = {} }) => {
-  const { id, title, description } = video;
-  const [delteVideo, { isLoading }] = useDeleteVideoMutation();
-  const handleDeleteVideo = () => {
-    delteVideo(id);
+const AssignmentTableRow = ({ assignment, number }) => {
+  const { id, title, video_title, totalMark } = assignment || {};
+  const [deleteAssignment, { isLoading }] = useDeleteAssignmentMutation();
+
+  const handleDeleteAssignment = () => {
+    deleteAssignment(id);
   };
   return (
-    <tr className="overflow-hidden">
-      <td className="table-td flex justify-start whitespace-normal ">
-        Lesson - {title}
-      </td>
-      <td className="table-td whitespace-normal  ">{description}</td>
+    <tr>
+      <td className="table-td flex justify-start whitespace-normal">{title}</td>
+      <td className="table-td whitespace-normal  ">{video_title}</td>
+      <td className="table-td">{totalMark}</td>
       <td className="table-td flex gap-x-2">
-        <button onClick={handleDeleteVideo} disabled={isLoading}>
+        <button onClick={handleDeleteAssignment} disabled={isLoading}>
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -30,7 +30,10 @@ const VideoTableRow = ({ video = {} }) => {
             />
           </svg>
         </button>
-        <Link state={{ title: "Edit Video" }} to={`/admin/videos/edit/${id}`}>
+        <Link
+          to={`/admin/assignment/edit/${id}`}
+          state={{ title: "Add Assignment" }}
+        >
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -50,4 +53,4 @@ const VideoTableRow = ({ video = {} }) => {
   );
 };
 
-export default VideoTableRow;
+export default AssignmentTableRow;

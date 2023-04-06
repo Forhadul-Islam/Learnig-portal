@@ -16,10 +16,12 @@ const videosApi = apiSlice.injectEndpoints({
       }),
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const { video } = await queryFulfilled;
-          if (video) {
-            apiSlice.util.updateQueryData("getVideos", undefined, (draft) =>
-              draft.push(video)
+          const { data: video } = await queryFulfilled;
+          if (video?.id) {
+            dispatch(
+              apiSlice.util.updateQueryData("getVideos", undefined, (draft) => {
+                draft.push(video);
+              })
             );
           }
         } catch (err) {}

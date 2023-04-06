@@ -29,6 +29,7 @@ const Videos = () => {
         Yet no videos are added.
         <Link
           to="/admin/videos/create"
+          state={{ title: "Add Video" }}
           className="block mx-auto bg-blue-700 px-2 rounded-full w-28 mt-3"
         >
           Add Video
