@@ -5,6 +5,9 @@ const quizzesApi = apiSlice.injectEndpoints({
     getQuizzes: builder.query({
       query: () => `/quizzes`,
     }),
+    getQuizById: builder.query({
+      query: (quizId) => `/quizzes/${quizId}`,
+    }),
     getQuizzesByVideoId: builder.query({
       query: (videoId) => `/quizzes?video_id=${videoId}`,
     }),
@@ -33,6 +36,7 @@ const quizzesApi = apiSlice.injectEndpoints({
 
 export const {
   useGetQuizzesQuery,
+  useGetQuizByIdQuery,
   useGetQuizzesByVideoIdQuery,
   useAddQuizMutation,
   useUpdateQuizMutation,

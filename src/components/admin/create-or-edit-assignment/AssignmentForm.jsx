@@ -107,7 +107,7 @@ const AssignmentForm = ({ mode }) => {
               />
             </div>
 
-            <div className="col-span-12 lg:col-span-2">
+            <div className="col-span-12 lg:col-span-6">
               <select
                 className="mt-1 h-10 bg-gray-900 pl-2  block w-full shadow-sm sm:text-sm border border-gray-500  "
                 title="Video no of views"

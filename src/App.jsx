@@ -19,6 +19,7 @@ import Loader from "./components/ui/Loader";
 import NotFound from "./pages/NotFound";
 import CreateAndEditVideo from "./pages/admin/CreateAndEditVideo";
 import CreateOrEditAssignment from "./pages/admin/CreateOrEditAssignment";
+import CreateOrEditQuizzes from "./pages/admin/CreateOrEditQuizzes";
 
 function App() {
   const authChecked = useAuthCheck();
@@ -83,6 +84,14 @@ function App() {
               element={<CreateAndEditVideo mode="edit" />}
             />
             <Route path="quizzes" element={<Quizzes />} />
+            <Route
+              path="quizzes/create"
+              element={<CreateOrEditQuizzes mode="create" />}
+            />
+            <Route
+              path="quizzes/edit/:quizId"
+              element={<CreateOrEditQuizzes mode="edit" />}
+            />
           </Route>
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
