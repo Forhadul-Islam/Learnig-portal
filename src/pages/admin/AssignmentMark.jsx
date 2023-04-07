@@ -1,6 +1,7 @@
 import React from "react";
 import AssignmentMarkTable from "../../components/admin/assignment-mark/AssignmentMarkTable";
 import { useGetAssignmentMarkQuery } from "../../features/assignment-mark/assignmentMarkApi";
+import Error from "../../components/ui/Error";
 
 const AssignmentMark = () => {
   //get assignment marks
@@ -30,6 +31,7 @@ const AssignmentMark = () => {
     content = <AssignmentMarkTable assignmentMarks={assignmentMarks} />;
 
   if (isLoading) return <div>Loading...</div>;
+  // if (!isError) return <Error message="Sorry! Couldn't load data." />;
   return (
     <>
       <section className="py-6 bg-primary">

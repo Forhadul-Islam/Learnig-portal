@@ -36,7 +36,7 @@ const QuizForm = ({ mode }) => {
     option: "",
     isCorrect: false,
   });
-  const [ansId, setAnsId] = useState(null);
+  const [ansId, setAnsId] = useState(1);
   const [video, setVideo] = useState({});
   const [fetchQuiz, setFetchQuiz] = useState(false);
   //get videos for reference

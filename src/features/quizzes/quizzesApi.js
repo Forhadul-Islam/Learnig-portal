@@ -17,6 +17,23 @@ const quizzesApi = apiSlice.injectEndpoints({
         method: "POST",
         body: data,
       }),
+      async onQueryStarted(arg, { queryFulfilled, dispatch }) {
+        try {
+          const { data: newQuiz } = await queryFulfilled;
+          if (newQuiz?.id) {
+            //update all quizzes catch
+            dispatch(
+              apiSlice.util.updateQueryData(
+                "getQuizzes",
+                undefined,
+                (draft) => {
+                  draft.push(newQuiz);
+                }
+              )
+            );
+          }
+        } catch (err) {}
+      },
     }),
     updateQuiz: builder.mutation({
       query: ({ quizId, data }) => ({

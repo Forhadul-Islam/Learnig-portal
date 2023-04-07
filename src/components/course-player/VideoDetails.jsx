@@ -6,8 +6,12 @@ import { useGetQuizzesByVideoIdQuery } from "../../features/quizzes/quizzesApi";
 import QuizzesButton from "./QuizzesButton";
 import AssignmentSubmitModal from "./AssignmentSubmitModal";
 import AssignmentButton from "./AssignmentButton";
+import { useGetAssignmentMarkByAssignmentIdAndStudentIdQuery } from "../../features/assignment-mark/assignmentMarkApi";
+import useAuth from "../../hooks/useAuth";
+import AssignmentMark from "./AssignmentMark";
 
 const VideoDetails = ({ video = {} }) => {
+  const user = useAuth();
   const { id, title, description, createdAt } = video;
   const [isModalOpen, setIsmodalOpen] = useState(false);
 
@@ -51,7 +55,18 @@ const VideoDetails = ({ video = {} }) => {
         )}
         {isQuizzesSuccess && quizzes?.[0]?.id && <QuizzesButton videoId={id} />}
       </div>
-      <p className="mt-4 text-sm text-slate-400 leading-6">{description}</p>
+      {/* show assignment resutl state if submitted */}
+
+      {isAssignmentSuccess && assignment?.length > 0 && (
+        <AssignmentMark
+          assignment_id={assignment?.[0]?.id}
+          student_id={user?.id}
+        />
+      )}
+      <div>
+        <h4 className="mt-4">Description:</h4>
+        <p className="mt-1 text-sm text-slate-400 leading-6">{description}</p>
+      </div>
     </div>
   );
 };

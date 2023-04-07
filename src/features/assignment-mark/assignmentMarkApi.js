@@ -12,6 +12,11 @@ const assignmentMarkApi = apiSlice.injectEndpoints({
       query: ({ assignment_id, student_id }) =>
         `/assignmentMark?assignment_id=${assignment_id}&student_id=${student_id}`,
     }),
+    //get assignment by st_id and video_id
+    getAssignmentMarkByVideoIdAndStudentId: builder.query({
+      query: ({ video_id, student_id }) =>
+        `/assignmentMark?video_id=${video_id}&student_id=${student_id}`,
+    }),
 
     //admin will update assignment mark
     updateAssignmentMark: builder.mutation({
@@ -55,8 +60,8 @@ const assignmentMarkApi = apiSlice.injectEndpoints({
           const { data: submittedAssignment } = await queryFulfilled;
           if (submittedAssignment?.id) {
             const queryArg = {
-              student_id: submittedAssignment.student_id,
-              assignment_id: submittedAssignment.assignment_id,
+              student_id: arg.student_id,
+              assignment_id: arg.assignment_id,
             };
             dispatch(
               apiSlice.util.updateQueryData(
@@ -77,6 +82,8 @@ const assignmentMarkApi = apiSlice.injectEndpoints({
 export const {
   useGetAssignmentMarkQuery,
   useSubmitAssignmentMutation,
+  useLazyGetAssignmentMarkByAssignmentIdAndStudentIdQuery,
   useUpdateAssignmentMarkMutation,
+  useGetAssignmentMarkByVideoIdAndStudentIdQuery,
   useGetAssignmentMarkByAssignmentIdAndStudentIdQuery,
 } = assignmentMarkApi;

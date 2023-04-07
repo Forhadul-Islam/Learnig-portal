@@ -85,7 +85,7 @@
       "url": "https://www.youtube.com/embed/dD9O8DnIBj4",
       "duration": "5:30",
       "views": "51.2K",
-      "createdAt": "2023-04-05T18:40:42.215Z",
+      "createdAt": "2023-04-07T18:23:00.294Z",
       "id": 1
     },
     {
@@ -96,21 +96,30 @@
       "views": "95.2K",
       "createdAt": "2023-04-07T13:40:11.377Z",
       "id": 2
+    },
+    {
+      "title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "description": "In this tutorial, we will learn how to build a responsive navigation menu using CSS and JavaScript. We will start by creating a basic navigation menu using HTML and CSS, and then we will add JavaScript to make it responsive. By the end of this video, you will have a fully functional responsive navigation menu that you can use in your own projects.",
+      "url": "https://www.youtube.com/embed/8QKOaTYvYUA",
+      "duration": "12:30",
+      "views": "22.5K",
+      "createdAt": "2023-04-07T18:33:31.982Z",
+      "id": 3
     }
   ],
   "assignments": [
     {
-      "title": "Assignment 1 - Implement Debounce Function",
-      "totalMark": 100,
+      "title": "create landing page",
+      "totalMark": "100",
       "video_id": 2,
       "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
       "id": 1
     },
     {
-      "title": "Assignment 2 - Implement Best Practices",
-      "totalMark": 100,
-      "video_id": 1,
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "title": "faaa",
+      "totalMark": "100",
+      "video_id": 3,
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
       "id": 2
     }
   ],
@@ -174,50 +183,38 @@
   ],
   "assignmentMark": [
     {
-      "id": 1,
-      "student_id": 2,
-      "student_name": "Saad Hasan",
-      "assignment_id": 1,
-      "title": "Assignment 1 - Implement Debounce Function",
-      "createdAt": "2021-01-15T15:17:01.727Z",
+      "assignment_id": 3,
+      "title": "create some new",
+      "student_name": "haha",
+      "student_id": 11,
       "totalMark": 100,
       "mark": "100",
-      "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
-      "status": "published"
+      "repo_link": "test repo 2",
+      "live_link": "test live link",
+      "status": "published",
+      "id": 1
     },
     {
-      "id": 2,
-      "student_id": 2,
-      "student_name": "Saad Hasan",
       "assignment_id": 1,
-      "title": "Assignment 2 - Implement Best Practices",
-      "createdAt": "2021-01-15T15:17:01.727Z",
+      "title": "create landing page",
+      "student_name": "haha",
+      "student_id": 11,
       "totalMark": 100,
-      "mark": 100,
-      "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
-      "status": "published"
-    },
-    {
-      "id": 2,
-      "student_id": 2,
-      "student_name": "Akash Ahmed",
-      "assignment_id": 1,
-      "title": "Assignment 2 - Implement Best Practices",
-      "createdAt": "2021-01-15T15:17:01.727Z",
-      "totalMark": 100,
-      "mark": 50,
-      "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
-      "status": "published"
+      "mark": "50",
+      "repo_link": "test repo link",
+      "live_link": "test live link 2",
+      "status": "published",
+      "id": 2
     },
     {
       "assignment_id": 2,
-      "title": "Assignment 2 - Implement Best Practices",
-      "student_name": "Mizanur",
-      "student_id": 8,
+      "title": "faaa",
+      "student_name": "haha",
+      "student_id": 11,
       "totalMark": 100,
-      "mark": "55",
-      "repo_link": "fgdg",
-      "live_link": "fsdfsdf",
+      "mark": "100",
+      "repo_link": "dfsdf",
+      "live_link": "fdfd",
       "status": "published",
       "id": 3
     }
@@ -300,6 +297,17 @@
       "totalMark": 10,
       "mark": 5,
       "id": 7
+    },
+    {
+      "student_id": 11,
+      "student_name": "haha",
+      "video_id": "3",
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "totalQuiz": 1,
+      "totalWrong": 1,
+      "totalMark": 5,
+      "mark": 0,
+      "id": 8
     }
   ]
 }

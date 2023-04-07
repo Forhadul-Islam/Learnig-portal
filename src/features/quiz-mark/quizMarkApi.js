@@ -25,9 +25,7 @@ const quizMarkApi = apiSlice.injectEndpoints({
               "getQuizMarksByStudentAndVideoId",
               queryArg,
               (draft) => {
-                console.log(JSON.stringify(draft));
                 draft.push(submittedQuiz);
-                console.log(JSON.stringify(draft));
               }
             )
           );
