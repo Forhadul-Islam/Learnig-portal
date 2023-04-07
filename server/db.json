@@ -181,9 +181,9 @@
       "title": "Assignment 1 - Implement Debounce Function",
       "createdAt": "2021-01-15T15:17:01.727Z",
       "totalMark": 100,
-      "mark": 0,
+      "mark": "100",
       "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
-      "status": "pending"
+      "status": "published"
     },
     {
       "id": 2,
@@ -215,47 +215,11 @@
       "student_name": "Mizanur",
       "student_id": 8,
       "totalMark": 100,
-      "mark": 0,
+      "mark": "55",
       "repo_link": "fgdg",
       "live_link": "fsdfsdf",
-      "status": "pending",
+      "status": "published",
       "id": 3
-    },
-    {
-      "assignment_id": 1,
-      "title": "Assignment 1 - Implement Debounce Function",
-      "student_name": "Mizanur",
-      "student_id": 8,
-      "totalMark": 100,
-      "mark": 0,
-      "repo_link": "test repo link",
-      "live_link": "test live link",
-      "status": "pending",
-      "id": 4
-    },
-    {
-      "assignment_id": 1,
-      "title": "Assignment 1 - Implement Debounce Function",
-      "student_name": "Fake person",
-      "student_id": 10,
-      "totalMark": 100,
-      "mark": 0,
-      "repo_link": "test repo link",
-      "live_link": "test live link 2",
-      "status": "pending",
-      "id": 5
-    },
-    {
-      "assignment_id": 2,
-      "title": "Assignment 2 - Implement Best Practices",
-      "student_name": "Fake person",
-      "student_id": 10,
-      "totalMark": 100,
-      "mark": 0,
-      "repo_link": "test repo 2",
-      "live_link": "test live link",
-      "status": "pending",
-      "id": 6
     }
   ],
   "quizMark": [

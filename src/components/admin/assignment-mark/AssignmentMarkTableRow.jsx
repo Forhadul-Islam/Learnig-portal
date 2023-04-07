@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { useUpdateAssignmentMarkMutation } from "../../../features/assignment-mark/assignmentMarkApi";
 
 const AssignmentMarkTableRow = ({ mark = {} }) => {
-  const [result, setResult] = useState();
+  const [result, setResult] = useState(0);
   const {
     id,
     title,
@@ -9,19 +10,30 @@ const AssignmentMarkTableRow = ({ mark = {} }) => {
     student_name,
     repo_link,
     mark: achivedMark,
+    status,
   } = mark;
+
+  //update assignment mark
+  const [updateAssignmentMark, { isLoading, isSuccess, isError, error }] =
+    useUpdateAssignmentMarkMutation();
 
   //handle submit mark
   const handleMarkSubmit = () => {
     // logic for submittin assignment amrk
+    const data = {
+      ...mark,
+      status: "published",
+      mark: result,
+    };
+    updateAssignmentMark({ data, assignmentMarkId: id });
   };
   return (
     <tr>
-      <td className="table-td">{title}</td>
-      <td className="table-td">1{createdAt}</td>
-      <td className="table-td">{student_name}</td>
-      <td className="table-td">{repo_link}</td>
-      {achivedMark && achivedMark > 0 ? (
+      <td className="table-td whitespace-normal">{title}</td>
+      <td className="table-td whitespace-normal">{createdAt}</td>
+      <td className="table-td whitespace-normal">{student_name}</td>
+      <td className="table-td whitespace-normal">{repo_link}</td>
+      {status == "published" ? (
         <td className="table-td">{achivedMark}</td>
       ) : (
         <td className="table-td input-mark">

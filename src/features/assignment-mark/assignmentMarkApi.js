@@ -15,11 +15,32 @@ const assignmentMarkApi = apiSlice.injectEndpoints({
 
     //admin will update assignment mark
     updateAssignmentMark: builder.mutation({
-      query: ({ id, data }) => ({
-        url: `/assignmentMark/${id}`,
+      query: ({ assignmentMarkId, data }) => ({
+        url: `/assignmentMark/${assignmentMarkId}`,
         method: "PUT",
         body: data,
       }),
+      async onQueryStarted({ assignmentMarkId }, { queryFulfilled, dispatch }) {
+        try {
+          const { data: updatedAssignmentMark } = await queryFulfilled;
+          if (updatedAssignmentMark?.id) {
+            //update all quizzes catch
+            dispatch(
+              apiSlice.util.updateQueryData(
+                "getAssignmentMark",
+                undefined,
+                (draft) => {
+                  return draft.map((q) => {
+                    if (q.id == assignmentMarkId) {
+                      return updatedAssignmentMark;
+                    } else return q;
+                  });
+                }
+              )
+            );
+          }
+        } catch (err) {}
+      },
     }),
 
     //assignment submitted by student
