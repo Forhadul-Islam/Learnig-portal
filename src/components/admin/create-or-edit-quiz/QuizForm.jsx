@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TextInput from "../../ui/input/TextInput";
 import { useGetVideosQuery } from "../../../features/videos/videosApi";
 import Error from "../../ui/Error";
+import { TiTick } from "react-icons/ti";
 
 import { useNavigate, useParams } from "react-router-dom";
 import {
@@ -15,10 +16,27 @@ const QuizForm = ({ mode }) => {
   const navigate = useNavigate();
   //input states
   const [question, setQuestion] = useState("");
-  const [option1, setOption1] = useState({});
-  const [option2, setOption2] = useState({});
-  const [option3, setOption3] = useState({});
-  const [option4, setOption4] = useState({});
+  const [option1, setOption1] = useState({
+    id: 1,
+    option: "",
+    isCorrect: false,
+  });
+  const [option2, setOption2] = useState({
+    id: 2,
+    option: "",
+    isCorrect: false,
+  });
+  const [option3, setOption3] = useState({
+    id: 3,
+    option: "",
+    isCorrect: false,
+  });
+  const [option4, setOption4] = useState({
+    id: 4,
+    option: "",
+    isCorrect: false,
+  });
+  const [ansId, setAnsId] = useState(null);
   const [video, setVideo] = useState({});
   const [fetchQuiz, setFetchQuiz] = useState(false);
   //get videos for reference
@@ -62,6 +80,9 @@ const QuizForm = ({ mode }) => {
   }, [mode, quizId]);
 
   const currVideo = videos?.find((v) => v.id == quiz?.video_id);
+  const correctOptionId = quiz?.options.find((op) => {
+    return op.isCorrect;
+  }).id;
 
   //get video
   function getVideo(videos, video_id) {
@@ -70,38 +91,57 @@ const QuizForm = ({ mode }) => {
 
   //set quiz data for editing
   useEffect(() => {
-    if (mode == "edit" && isAssignmentSuccess) {
+    if (mode == "edit" && isQuizSuccess) {
       const { id, question, video_id, options } = quiz;
       setQuestion(question);
       setVideo(currVideo);
-      setOption1(option1[0]);
-      setOption2(option2[1]);
-      setOption3(option3[2]);
-      setOption4(option4[3]);
+      setOption1(options[0]);
+      setOption2(options[1]);
+      setOption3(options[2]);
+      setOption4(options[3]);
+      setAnsId(correctOptionId);
       //   if (videos?.length > 0) {
       //     setVideo(getVideo(videos, video_id));
       //   }
     }
-  }, [currVideo, mode, isQuizSuccess]);
-
-  const resetForm = () => {
-    setTitle("");
-    setTotalMark("");
-  };
+  }, [currVideo, mode, quiz, isQuizSuccess]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const optionsCopy = [option1, option2, option3, option4];
+    const updatedOptionsWithCorrectAsn = optionsCopy.map((op) => {
+      if (op.id === ansId) {
+        return {
+          ...op,
+          isCorrect: true,
+        };
+      }
+      return {
+        ...op,
+        isCorrect: false,
+      };
+    });
     const data = {
+      question,
+      options: updatedOptionsWithCorrectAsn,
       video_id: video?.id,
       video_title: video?.title,
     };
 
     if (mode == "create" && quizId == undefined) {
-      //   addAssignment(data);
+      addQuiz(data);
     }
     if (mode == "edit" && quizId) {
-      //   updateAssignment({ data, quizId });
+      updateQuiz({ data, quizId });
     }
+  };
+
+  //handle options input
+  const handleOptions = ({ setter, option, field, value }) => {
+    setter({
+      ...option,
+      [field]: value,
+    });
   };
 
   useEffect(() => {
@@ -109,6 +149,13 @@ const QuizForm = ({ mode }) => {
   }, [isAQSuccess, isUQSuccess]);
 
   if (mode == "edit" && isQuizLoading) return <div>Loading...</div>;
+
+  //css for checked option answer
+  const getCheckedTickCss = (optionId, ansId) => {
+    return `${
+      optionId == ansId ? "text-green-500" : "text-gray-500"
+    } cursor-pointer w-16 -mb-4  flex justify-center items-center`;
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -123,40 +170,100 @@ const QuizForm = ({ mode }) => {
               />
             </div>
             {/* Option - 1 */}
-            <div className="col-span-6 ">
-              <TextInput
-                title="Option-1"
-                value={option1}
-                onChange={(e) => setOption1(e.target.value)}
-              />
+            <div className=" col-span-6 flex bg-gray-800 py-2 px-2 rounded-md">
+              <div className="flex-1">
+                <TextInput
+                  title="Option-1"
+                  value={option1?.option}
+                  onChange={(e) =>
+                    handleOptions({
+                      setter: setOption1,
+                      field: "option",
+                      option: option1,
+                      value: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              <div
+                onClick={() => setAnsId(option1.id)}
+                className={getCheckedTickCss(option1?.id, ansId)}
+              >
+                <TiTick className="text-5xl" />
+              </div>
             </div>
             {/* Option - 2 */}
-            <div className="col-span-6 ">
-              <TextInput
-                title="Option-2"
-                value={option2}
-                onChange={(e) => setOption2(e.target.value)}
-              />
+            <div className=" col-span-6 flex bg-gray-800 py-2 px-2 rounded-md">
+              <div className="flex-1">
+                <TextInput
+                  title="Option-2"
+                  value={option2?.option}
+                  onChange={(e) =>
+                    handleOptions({
+                      setter: setOption2,
+                      field: "option",
+                      option: option2,
+                      value: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              <div
+                onClick={() => setAnsId(option2.id)}
+                className={getCheckedTickCss(option2?.id, ansId)}
+              >
+                <TiTick className="text-5xl" />
+              </div>
             </div>
             {/* Option - 3 */}
-            <div className="col-span-6 ">
-              <TextInput
-                title="Option-3"
-                value={option3}
-                onChange={(e) => setOption3(e.target.value)}
-              />
+            <div className=" col-span-6 flex bg-gray-800 py-2 px-2 rounded-md">
+              <div className="flex-1">
+                <TextInput
+                  title="Option-3"
+                  value={option3?.option}
+                  onChange={(e) =>
+                    handleOptions({
+                      setter: setOption3,
+                      field: "option",
+                      option: option3,
+                      value: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              <div
+                onClick={() => setAnsId(option3.id)}
+                className={getCheckedTickCss(option3?.id, ansId)}
+              >
+                <TiTick className="text-5xl" />
+              </div>
             </div>
             {/* Option - 4 */}
-            <div className="col-span-6 ">
-              <TextInput
-                title="Option-4"
-                value={option4}
-                onChange={(e) => setOption4(e.target.value)}
-              />
+            <div className=" col-span-6 flex bg-gray-800 py-2 px-2 rounded-md">
+              <div className="flex-1">
+                <TextInput
+                  title="Option-4"
+                  value={option4?.option}
+                  onChange={(e) =>
+                    handleOptions({
+                      setter: setOption4,
+                      field: "option",
+                      option: option4,
+                      value: e.target.value,
+                    })
+                  }
+                />
+              </div>
+              <div
+                onClick={() => setAnsId(option4.id)}
+                className={getCheckedTickCss(option4?.id, ansId)}
+              >
+                <TiTick className="text-5xl" />
+              </div>
             </div>
             <div className="col-span-12">
               <select
-                className="mt-1 h-10 bg-gray-900 pl-2  block w-full shadow-sm sm:text-sm border border-gray-500  "
+                className="mt-1 h-12  bg-gray-900 pl-2  block w-full shadow-sm sm:text-sm border border-gray-500  "
                 title="Video no of views"
                 defaultValue={video?.title}
                 onChange={(e) => setVideo(JSON.parse(e.target.value))}
@@ -170,7 +277,8 @@ const QuizForm = ({ mode }) => {
                   videos?.length > 0 &&
                   videos.map((v) => (
                     <option
-                      selected={v.id == video.id}
+                      className="h-10 py-2 "
+                      selected={v.id == video?.id}
                       value={JSON.stringify(v)}
                     >
                       {v.title}

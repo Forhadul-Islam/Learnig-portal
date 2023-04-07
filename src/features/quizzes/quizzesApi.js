@@ -19,17 +19,59 @@ const quizzesApi = apiSlice.injectEndpoints({
       }),
     }),
     updateQuiz: builder.mutation({
-      query: ({ id, data }) => ({
-        url: `/quizzes/${id}`,
+      query: ({ quizId, data }) => ({
+        url: `/quizzes/${quizId}`,
         method: "PUT",
         body: data,
       }),
+      async onQueryStarted({ quizId }, { queryFulfilled, dispatch }) {
+        try {
+          const { data: updatedQuiz } = await queryFulfilled;
+          if (updatedQuiz?.id) {
+            //update all quizzes catch
+            dispatch(
+              apiSlice.util.updateQueryData(
+                "getQuizzes",
+                undefined,
+                (draft) => {
+                  return draft.map((q) => {
+                    if (q.id == quizId) {
+                      return updatedQuiz;
+                    } else return q;
+                  });
+                }
+              )
+            );
+          }
+
+          //update single quiz catch by id
+          dispatch(
+            apiSlice.util.updateQueryData("getQuizById", quizId, (draft) => {
+              return updatedQuiz;
+            })
+          );
+        } catch (err) {}
+      },
     }),
     deleteQuiz: builder.mutation({
       query: (id) => ({
         url: `/quizzes/${id}`,
         method: "DELETE",
       }),
+      async onQueryStarted(arg, { queryFulfilled, dispatch }) {
+        //optimistic update
+        const pathchResutl = dispatch(
+          apiSlice.util.updateQueryData("getQuizzes", undefined, (draft) =>
+            draft.filter((d) => d.id.toString() != arg)
+          )
+        );
+
+        try {
+          await queryFulfilled;
+        } catch (err) {
+          pathchResutl.undo();
+        }
+      },
     }),
   }),
 });
