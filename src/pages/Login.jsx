@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <section className="bg-custom-gradient  py-6 bg-primary h-screen grid place-items-center">
+    <section className=" py-6 bg-primary h-screen grid place-items-center">
       <div className="mx-auto max-w-md px-5 lg:px-0">
         <div>
           <img className="h-12 mx-auto" src={logo} />

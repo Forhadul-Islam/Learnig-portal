@@ -32,7 +32,7 @@ const AssignmentTableRow = ({ assignment, number }) => {
         </button>
         <Link
           to={`/admin/assignment/edit/${id}`}
-          state={{ title: "Add Assignment" }}
+          state={{ title: "Update Assignment" }}
         >
           <svg
             fill="none"

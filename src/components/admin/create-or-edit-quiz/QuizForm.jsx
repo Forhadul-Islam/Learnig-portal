@@ -159,7 +159,7 @@ const QuizForm = ({ mode }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="shadow overflow-hidden  sm:rounded-md">
+      <div className="bg-secondary mt-4 mx-4 shadow overflow-hidden  sm:rounded-md">
         <div className="px-4 py-5 bg-primary sm:p-6">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 ">

@@ -841,7 +841,8 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(8 14 27 / var(--tw-bg-opacity));
+  /* background-color: rgb(8 14 27 / var(--tw-bg-opacity)); */
+  background-color: transparent;
 }
 
 .bg-red-600 {

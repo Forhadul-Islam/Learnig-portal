@@ -20,6 +20,7 @@ import NotFound from "./pages/NotFound";
 import CreateAndEditVideo from "./pages/admin/CreateAndEditVideo";
 import CreateOrEditAssignment from "./pages/admin/CreateOrEditAssignment";
 import CreateOrEditQuizzes from "./pages/admin/CreateOrEditQuizzes";
+import BG from "../src/assets/image/bgg.png";
 
 function App() {
   const authChecked = useAuthCheck();
@@ -31,7 +32,7 @@ function App() {
       </div>
     );
   return (
-    <>
+    <div className={`min-h-screen bg-[url('bgg.png')]`}>
       <Router>
         <Routes>
           <Route path="/" element={<PublicRoute />}>
@@ -96,7 +97,7 @@ function App() {
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

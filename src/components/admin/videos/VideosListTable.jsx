@@ -7,7 +7,7 @@ const VideosListTable = ({ videos }) => {
   });
 
   return (
-    <table className="divide-y-1 text-base divide-gray-600 w-full">
+    <table className=" divide-y-1 text-base divide-gray-600 w-full">
       <thead>
         <tr>
           <th className="table-th">Video Title</th>
