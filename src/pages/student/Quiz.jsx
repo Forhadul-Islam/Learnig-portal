@@ -142,6 +142,7 @@ const Quiz = () => {
 
   //render jsx
   if (isLoading && !currentQuiz?.id) return <div className="">Loading...</div>;
+  if (isSuccess && data?.length == 0) return <div>No Quiz found!</div>;
   if (currentQuiz?.id && quizzes?.length > 0) {
     return (
       <>

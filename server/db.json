@@ -85,7 +85,7 @@
       "url": "https://www.youtube.com/embed/dD9O8DnIBj4",
       "duration": "5:30",
       "views": "51.2K",
-      "createdAt": "2023-04-07T18:23:00.294Z",
+      "createdAt": "2023-04-09T16:21:53.875Z",
       "id": 1
     },
     {
@@ -111,8 +111,8 @@
     {
       "title": "create landing page",
       "totalMark": "100",
-      "video_id": 2,
-      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
+      "video_id": 3,
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
       "id": 1
     },
     {
@@ -121,6 +121,13 @@
       "video_id": 3,
       "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
       "id": 2
+    },
+    {
+      "title": "asf",
+      "totalMark": "asdfdsf",
+      "video_id": 3,
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "id": 3
     }
   ],
   "quizzes": [
@@ -140,16 +147,16 @@
         {
           "id": 3,
           "option": "An animation that plays when a user hovers over an element.",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "id": 4,
           "option": "All of the above.",
-          "isCorrect": false
+          "isCorrect": true
         }
       ],
-      "video_id": 1,
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "video_id": 2,
+      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
       "id": 2
     },
     {
@@ -163,7 +170,7 @@
         {
           "id": 2,
           "option": "undefined and null are same",
-          "isCorrect": false
+          "isCorrect": true
         },
         {
           "id": 3,
@@ -173,24 +180,52 @@
         {
           "id": 4,
           "option": "none of them are true",
-          "isCorrect": true
+          "isCorrect": false
         }
       ],
       "video_id": 1,
       "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
       "id": 3
+    },
+    {
+      "question": "fsd",
+      "options": [
+        {
+          "id": 1,
+          "option": "sdfdf",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "option": "sdfsdf",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "option": "fsdfwe",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "option": "sdfsdf",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 3,
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "id": 4
     }
   ],
   "assignmentMark": [
     {
-      "assignment_id": 3,
-      "title": "create some new",
-      "student_name": "haha",
-      "student_id": 11,
+      "assignment_id": 1,
+      "title": "create landing page",
+      "student_name": "Mizanur",
+      "student_id": 8,
       "totalMark": 100,
-      "mark": "100",
-      "repo_link": "test repo 2",
-      "live_link": "test live link",
+      "mark": "10",
+      "repo_link": "sd",
+      "live_link": "sadd",
       "status": "published",
       "id": 1
     },
@@ -200,114 +235,35 @@
       "student_name": "haha",
       "student_id": 11,
       "totalMark": 100,
-      "mark": "50",
-      "repo_link": "test repo link",
-      "live_link": "test live link 2",
+      "mark": "80",
+      "repo_link": "fdsfsdf",
+      "live_link": "test live link",
       "status": "published",
       "id": 2
-    },
-    {
-      "assignment_id": 2,
-      "title": "faaa",
-      "student_name": "haha",
-      "student_id": 11,
-      "totalMark": 100,
-      "mark": "100",
-      "repo_link": "dfsdf",
-      "live_link": "fdfd",
-      "status": "published",
-      "id": 3
     }
   ],
   "quizMark": [
-    {
-      "id": 1,
-      "student_id": 2,
-      "student_name": "Saad Hasan",
-      "video_id": 1,
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 2,
-      "totalCorrect": 1,
-      "totalWrong": 1,
-      "totalMark": 10,
-      "mark": 5
-    },
-    {
-      "student_id": 8,
-      "student_name": "Mizanur",
-      "video_id": "2",
-      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
-      "totalQuiz": 1,
-      "totalWrong": 1,
-      "totalMark": 5,
-      "mark": 0,
-      "id": 2
-    },
-    {
-      "student_id": 8,
-      "student_name": "Mizanur",
-      "video_id": "2",
-      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
-      "totalQuiz": 1,
-      "totalWrong": 0,
-      "totalMark": 5,
-      "mark": 5,
-      "id": 3
-    },
     {
       "student_id": 8,
       "student_name": "Mizanur",
       "video_id": "1",
       "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 2,
+      "totalQuiz": 3,
       "totalWrong": 1,
-      "totalMark": 10,
-      "mark": 5,
-      "id": 4
+      "totalMark": 15,
+      "mark": 10,
+      "id": 1
     },
     {
-      "student_id": 10,
-      "student_name": "Fake person",
+      "student_id": 11,
+      "student_name": "haha",
       "video_id": "1",
       "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
       "totalQuiz": 2,
       "totalWrong": 2,
       "totalMark": 10,
       "mark": 0,
-      "id": 5
-    },
-    {
-      "student_id": 10,
-      "student_name": "Fake person",
-      "video_id": "2",
-      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
-      "totalQuiz": 1,
-      "totalWrong": 1,
-      "totalMark": 5,
-      "mark": 0,
-      "id": 6
-    },
-    {
-      "student_id": 11,
-      "student_name": "haha",
-      "video_id": "1",
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 2,
-      "totalWrong": 1,
-      "totalMark": 10,
-      "mark": 5,
-      "id": 7
-    },
-    {
-      "student_id": 11,
-      "student_name": "haha",
-      "video_id": "3",
-      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
-      "totalQuiz": 1,
-      "totalWrong": 1,
-      "totalMark": 5,
-      "mark": 0,
-      "id": 8
+      "id": 2
     }
   ]
 }

@@ -30,7 +30,7 @@ const AssignmentMarkTableRow = ({ mark = {} }) => {
   return (
     <tr>
       <td className="table-td whitespace-normal">{title}</td>
-      <td className="table-td whitespace-normal">{createdAt}</td>
+      {/* <td className="table-td whitespace-normal">{createdAt}</td> */}
       <td className="table-td whitespace-normal">{student_name}</td>
       <td className="table-td whitespace-normal">{repo_link}</td>
       {status == "published" ? (
