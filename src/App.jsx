@@ -32,11 +32,11 @@ function App() {
       </div>
     );
   return (
-    <div className={`min-h-screen bg-[url('bgg.png')]`}>
+    <div className="bg-form-gradient">
       <Router>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/" element={<PublicRoute />}>
-            <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Route>
@@ -47,6 +47,20 @@ function App() {
               <>
                 <Navbar />
                 <RequireAuth allowedRole="student" />
+              </>
+            }
+          >
+            <Route path="leader-board" element={<LeaderBoard />} />
+            <Route path="course-player/:videoId" element={<CoursePlayer />} />
+            <Route path="quizzes/:videoId" element={<Quiz />} />
+          </Route>
+          // admin can also access the course content
+          <Route
+            path="/*"
+            element={
+              <>
+                <Navbar />
+                <RequireAuth allowedRole="admin" />
               </>
             }
           >

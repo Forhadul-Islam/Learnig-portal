@@ -34,17 +34,17 @@ const AssignmentMark = () => {
   // if (!isError) return <Error message="Sorry! Couldn't load data." />;
   return (
     <>
-      <section className="py-6 bg-primary">
+      <section className="py-6 min-h-screen">
         <div className="mx-auto max-w-full px-5 lg:px-20">
           <div className="px-3 py-20 bg-opacity-10">
             <ul className="assignment-status">
-              <li>
+              <li className="text-black">
                 Total <span>{total}</span>
               </li>
-              <li>
+              <li className="text-black">
                 Pending <span>{pending}</span>
               </li>
-              <li>
+              <li className="text-black">
                 Mark Sent <span>{markSent}</span>
               </li>
             </ul>

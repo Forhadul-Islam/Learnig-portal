@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/image/learningportal.svg";
+import logo from "../assets/image/logo.png";
 import Error from "../components/ui/Error";
 import Loader from "../components/ui/Loader";
 import { useLoginMutation } from "../features/auth/authApi";
@@ -29,13 +29,13 @@ const Login = () => {
   };
 
   return (
-    <section className=" py-6 bg-primary h-screen grid place-items-center">
-      <div className="mx-auto max-w-md px-5 lg:px-0">
+    <section className=" py-6 bg-primary  h-screen grid place-items-center">
+      <div className="mx-auto  max-w-md px-5 lg:px-0">
         <div>
           <img className="h-12 mx-auto" src={logo} />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-100">
+          {/* <h2 className="mt-6 text-center text-3xl font-bold text-slate-900">
             Sign in to Account
-          </h2>
+          </h2> */}
         </div>
         <form onSubmit={(e) => handleLogin(e)} className="mt-8 space-y-6">
           <input type="hidden" name="remember" value="true" />

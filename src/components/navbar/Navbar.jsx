@@ -1,10 +1,10 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/image/learningportal.svg";
+import logo from "../../assets/image/logo.png";
 import { userLoggedOut } from "../../features/auth/authSlice";
 
-const Navbar = () => {
+const Navbar = ({ admin }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
@@ -14,17 +14,25 @@ const Navbar = () => {
     navigate("/");
   };
   return (
-    <nav className="shadow-md">
+    <nav className="shadow-sm">
       <div className="max-w-7xl px-5 lg:px-0 mx-auto flex justify-between py-3">
         <Link to="/">
           <img className="h-10" src={logo} />
         </Link>
+
         <div className="flex items-center gap-3">
-          <h2 className="font-medium">{user?.name}</h2>
-          <button
-            onClick={handleLogout}
-            className="flex gap-2 items-center px-4 py-1 rounded-full text-sm transition-all bg-red-600 hover:bg-red-700 font-medium"
-          >
+          {admin && (
+            <div className="flex flex-row gap-2">
+              <Link to="/admin" className="outline_btn">
+                Dashboard
+              </Link>
+              <Link to="/course-play/1" className="outline_btn">
+                Course
+              </Link>
+            </div>
+          )}
+          <h2 className="font-medium text-black">| {user?.name} | </h2>
+          <button onClick={handleLogout} className="flex gap-2 black_btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

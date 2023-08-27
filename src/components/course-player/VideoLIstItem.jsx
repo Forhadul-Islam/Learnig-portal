@@ -11,7 +11,7 @@ const VideoLIstItem = ({ video }) => {
   return (
     <Link
       to={`/course-player/${id}`}
-      className={` ${id == videoId && "bg-indigo-800"} ${
+      className={` rounded-md ${id == videoId && "bg-indigo-800"} ${
         id != videoId && "hover:bg-slate-900"
       }  w-full flex flex-row gap-2 cursor-pointer  p-2 py-3`}
     >
@@ -35,9 +35,9 @@ const VideoLIstItem = ({ video }) => {
         />
       </svg>
       {/* <!-- Description --> */}
-      <div clas="flex flex-col w-full">
+      <div clas="flex flex-col w-full ">
         <a href="#">
-          <p className="text-slate-50 text-sm font-medium">{title}</p>
+          <p className="text-slate-50 text-sm font-medium ">{title}</p>
         </a>
         <div>
           <span className="text-gray-400 text-xs mt-1">{duration} Mins</span>

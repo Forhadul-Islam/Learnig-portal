@@ -1,91 +1,28 @@
 {
   "users": [
     {
-      "email": "admin@learnwithsumit.com",
-      "password": "$2a$10$/TDPCTU28mFzKnSsW2pHSu512mpMKxLf8eiPbcTFLSNL87tbZBp3W",
+      "email": "admin@gmail.com",
+      "password": "$2a$10$DdmVPW5QNAe1AQPnGuqpW.TWtITQuEsnnZc9zR2Zr6ayfwONZajBS",
+      "name": "Admin",
       "role": "admin",
-      "name": "LWS Admin",
       "id": 1
     },
     {
-      "email": "saad.hasan@learnwithsumit.com",
-      "password": "$2a$10$4iJEmSkM1Dq6WMRb0SuJeeic1SEB9TrH3gw5IT441Adox/ZZXj2Ae",
-      "role": "student",
-      "name": "Saad Hasan",
-      "id": 2
-    },
-    {
-      "email": "akash.ahmed@learnwithsumit.com",
-      "password": "$2a$10$TNsYpL6ffKBrupNNvdJlleJlgIkp1C1xQJCbiv7HAl5Ggs.kucie2",
-      "role": "student",
-      "name": "Akash Ahmed",
-      "id": 3
-    },
-    {
-      "email": "md.salahuddin@learnwithsumit.com",
-      "password": "$2a$10$dcWjzIi4mLAERlWE4nfJW.1/mvC9FXqZU8A2V1rPlsqIrP3kWa8PG",
-      "role": "student",
-      "name": "Mohammad Salahuddin",
-      "id": 4
-    },
-    {
-      "email": "ferdous.shohag@learnwithsumit.com",
-      "password": "$2a$10$IZ6eXNauYSqMhl38Wc46texV2vjGZz.Zl66j7hrnW6ZDSDcMlPWeu",
-      "role": "student",
-      "name": "Ferdous",
-      "id": 5
-    },
-    {
-      "email": "riyadh.vai@learnwithsumit.com",
-      "password": "$2a$10$e4XPY48UpqmAj8teZ2je8.qd5AEk6hWm5PQwDoJsCsE91qlDPJx1G",
-      "role": "student",
-      "name": "Riyadh",
-      "id": 6
-    },
-    {
-      "email": "arif.almas@learnwithsumit.com",
-      "password": "$2a$10$NN4pXB4tBMw.ySrMDPMymepSGDdcvKzx/RjNCrdNTENOFVLWCWGOi",
-      "role": "student",
-      "name": "Arif",
-      "id": 7
-    },
-    {
       "email": "mizanur@gmail.com",
-      "password": "$2a$10$6ALmAe0TdmLz3skWYNrSLeSWSmL6Y3IT/X0S8TfZHM/HX9kOoDuoW",
-      "name": "Mizanur",
+      "password": "$2a$10$AvGGdcjrZq7uJCKw5Wxu/.FzcO5c.Kvo19T9ZPIvVWhpIU54WjI/e",
+      "name": "Mizanur Rahaman",
       "role": "student",
-      "id": 8
-    },
-    {
-      "email": "mizanforhad@yahoo.com",
-      "password": "$2a$10$g2bBqT/nAOxQrg0/dpGQT.y0bfH7FnqCJw/MQvQiCe9bgE8keeGm2",
-      "name": "Mizaanur Rahaman",
-      "role": "student",
-      "id": 9
-    },
-    {
-      "email": "fake@gmail.com",
-      "password": "$2a$10$4ijUI3BcsChNh2d0jLo8CeHZYEj6.mqw.yswssoWQSAgv.99JVcwq",
-      "name": "Fake person",
-      "role": "student",
-      "id": 10
-    },
-    {
-      "email": "haha@haha.com",
-      "password": "$2a$10$2etpDpq43Cc.xySfYh0XlO2vSUnDHISkGGdRvXaLAW5eLK.lD.b/y",
-      "name": "haha",
-      "role": "student",
-      "id": 11
+      "id": 2
     }
   ],
   "videos": [
     {
       "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
+      "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
       "url": "https://www.youtube.com/embed/dD9O8DnIBj4",
       "duration": "5:30",
       "views": "51.2K",
-      "createdAt": "2023-04-09T16:21:53.875Z",
+      "createdAt": "2023-08-26T20:51:20.648Z",
       "id": 1
     },
     {
@@ -105,6 +42,96 @@
       "views": "22.5K",
       "createdAt": "2023-04-07T18:33:31.982Z",
       "id": 3
+    },
+    {
+      "title": "Introduction to React.js - Building User Interfaces",
+      "description": "Learn the basics of React.js and how to build dynamic user interfaces with ease.",
+      "url": "https://www.youtube.com/embed/XxVg_s8xAms",
+      "duration": "15:45",
+      "views": "128.7K",
+      "createdAt": "2023-09-01T10:20:00.000Z",
+      "id": 4
+    },
+    {
+      "title": "Async JavaScript: Promises and Async/Await Explained",
+      "description": "Dive into asynchronous programming in JavaScript using Promises and the modern async/await syntax.",
+      "url": "https://www.youtube.com/embed/F_1vXT9sTgg",
+      "duration": "20:10",
+      "views": "95.3K",
+      "createdAt": "2023-09-02T14:30:00.000Z",
+      "id": 5
+    },
+    {
+      "title": "Building a RESTful API with Node.js and Express",
+      "description": "Create a RESTful API using Node.js and Express, allowing for data manipulation and retrieval.",
+      "url": "https://www.youtube.com/embed/gbIpZG42Fms",
+      "duration": "18:55",
+      "views": "72.8K",
+      "createdAt": "2023-09-03T09:15:00.000Z",
+      "id": 6
+    },
+    {
+      "title": "Introduction to Responsive Web Design",
+      "description": "Learn the principles of responsive web design and create websites that adapt to various screen sizes.",
+      "url": "https://www.youtube.com/embed/3t8MeE8Ik4E",
+      "duration": "14:20",
+      "views": "56.4K",
+      "createdAt": "2023-09-04T12:40:00.000Z",
+      "id": 7
+    },
+    {
+      "title": "CSS Flexbox: Mastering Layouts",
+      "description": "Master the art of building flexible layouts using CSS Flexbox to create responsive designs.",
+      "url": "https://www.youtube.com/embed/Zv1m-2tXbhw",
+      "duration": "22:30",
+      "views": "82.1K",
+      "createdAt": "2023-09-05T16:05:00.000Z",
+      "id": 8
+    },
+    {
+      "title": "JavaScript ES6: Arrow Functions and Destructuring",
+      "description": "Explore modern JavaScript features like arrow functions and destructuring for concise and efficient code.",
+      "url": "https://www.youtube.com/embed/6sQyHt-fJr0",
+      "duration": "12:15",
+      "views": "44.9K",
+      "createdAt": "2023-09-06T19:30:00.000Z",
+      "id": 9
+    },
+    {
+      "title": "Getting Started with Vue.js - Build Interactive Web Apps",
+      "description": "Begin your journey with Vue.js and learn how to build interactive web applications with ease.",
+      "url": "https://youtu.be/1GNsWa_EZdw?si=zaVUqUpRJTrI-Jtp",
+      "duration": "17:50",
+      "views": "61.7K",
+      "createdAt": "2023-08-26T22:46:57.731Z",
+      "id": 10
+    },
+    {
+      "title": "Introduction to Python Programming",
+      "description": "Discover the basics of Python programming and start your programming journey with a versatile language.",
+      "url": "https://www.youtube.com/embed/jyT9fYFpmd8",
+      "duration": "19:25",
+      "views": "38.2K",
+      "createdAt": "2023-09-08T08:05:00.000Z",
+      "id": 11
+    },
+    {
+      "title": "Using Git and GitHub: Version Control Made Easy",
+      "description": "Learn how to effectively use Git and GitHub for version control and collaborative software development.",
+      "url": "https://www.youtube.com/embed/uUuTYDg9XoI",
+      "duration": "16:40",
+      "views": "49.6K",
+      "createdAt": "2023-09-09T14:20:00.000Z",
+      "id": 12
+    },
+    {
+      "title": "Building a Simple To-Do App with React Native",
+      "description": "Create a simple to-do app using React Native and build cross-platform mobile applications.",
+      "url": "https://www.youtube.com/embed/0-S5a0eXPoc",
+      "duration": "14:50",
+      "views": "29.8K",
+      "createdAt": "2023-09-10T18:00:00.000Z",
+      "id": 13
     }
   ],
   "assignments": [
@@ -128,6 +155,86 @@
       "video_id": 3,
       "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
       "id": 3
+    },
+    {
+      "title": "Build a React Component",
+      "description": "For this assignment, you will build a simple React component that displays user information. Use the concepts learned in the 'Introduction to React.js' video to create a reusable and interactive component.",
+      "totalMark": 100,
+      "video_id": 4,
+      "video_title": "Introduction to React.js - Building User Interfaces",
+      "id": 4
+    },
+    {
+      "title": "Asynchronous Programming Exercise",
+      "description": "Apply your knowledge of asynchronous programming by solving a set of coding challenges using Promises and async/await. Follow the instructions given in the 'Async JavaScript: Promises and Async/Await Explained' video.",
+      "totalMark": 120,
+      "video_id": 5,
+      "video_title": "Async JavaScript: Promises and Async/Await Explained",
+      "id": 5
+    },
+    {
+      "title": "RESTful API Implementation",
+      "description": "In this assignment, you will implement a RESTful API using Node.js and Express. Create endpoints for data manipulation and retrieval based on the concepts covered in the 'Building a RESTful API with Node.js and Express' video.",
+      "totalMark": 150,
+      "video_id": 6,
+      "video_title": "Building a RESTful API with Node.js and Express",
+      "id": 6
+    },
+    {
+      "title": "Responsive Web Design Project",
+      "description": "Design and develop a responsive webpage that adapts to various screen sizes. Apply the principles discussed in the 'Introduction to Responsive Web Design' video to create an engaging and user-friendly layout.",
+      "totalMark": 110,
+      "video_id": 7,
+      "video_title": "Introduction to Responsive Web Design",
+      "id": 7
+    },
+    {
+      "title": "Flexbox Layout Challenge",
+      "description": "Create a modern website layout using CSS Flexbox techniques. Implement a flexible and responsive design following the guidelines from the 'CSS Flexbox: Mastering Layouts' video.",
+      "totalMark": 130,
+      "video_id": 8,
+      "video_title": "CSS Flexbox: Mastering Layouts",
+      "id": 8
+    },
+    {
+      "title": "Refactor JavaScript Code",
+      "description": "Review a given piece of JavaScript code and refactor it using arrow functions and destructuring. Apply the modern JavaScript features demonstrated in the 'JavaScript ES6: Arrow Functions and Destructuring' video.",
+      "totalMark": 90,
+      "video_id": 9,
+      "video_title": "JavaScript ES6: Arrow Functions and Destructuring",
+      "id": 9
+    },
+    {
+      "title": "Vue.js Interactive Web App",
+      "description": "Build an interactive web application using Vue.js. Follow the instructions from the 'Getting Started with Vue.js - Build Interactive Web Apps' video to create dynamic and responsive user interfaces.",
+      "totalMark": 140,
+      "video_id": 10,
+      "video_title": "Getting Started with Vue.js - Build Interactive Web Apps",
+      "id": 10
+    },
+    {
+      "title": "Python Basics Project",
+      "description": "Implement a simple Python program that demonstrates your understanding of basic programming concepts. Apply the fundamental principles introduced in the 'Introduction to Python Programming' video.",
+      "totalMark": 100,
+      "video_id": 11,
+      "video_title": "Introduction to Python Programming",
+      "id": 11
+    },
+    {
+      "title": "Git Version Control Exercise",
+      "description": "Practice using Git and GitHub for version control in a collaborative coding scenario. Follow the steps outlined in the 'Using Git and GitHub: Version Control Made Easy' video to complete this exercise.",
+      "totalMark": 120,
+      "video_id": 12,
+      "video_title": "Using Git and GitHub: Version Control Made Easy",
+      "id": 12
+    },
+    {
+      "title": "React Native To-Do App",
+      "description": "Develop a cross-platform to-do app using React Native. Apply your knowledge from the 'Building a Simple To-Do App with React Native' video to create a mobile application with essential features.",
+      "totalMark": 110,
+      "video_id": 13,
+      "video_title": "Building a Simple To-Do App with React Native",
+      "id": 13
     }
   ],
   "quizzes": [
@@ -214,6 +321,678 @@
       "video_id": 3,
       "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
       "id": 4
+    },
+    {
+      "question": "console.log(foo)",
+      "options": [
+        {
+          "id": 1,
+          "option": "not given",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "option": "undefined",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "option": "foo",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "option": "bar",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 3,
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "id": 5
+    },
+    {
+      "question": "What is JSX in React?",
+      "options": [
+        {
+          "id": "1",
+          "option": "A programming language similar to JavaScript.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "A syntax extension for JavaScript that allows writing HTML-like code.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "A framework for building server-side applications.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "A tool for handling asynchronous operations.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 4,
+      "video_title": "Introduction to React.js - Building User Interfaces",
+      "id": 1
+    },
+    {
+      "question": "What is the purpose of the 'ReactDOM.render()' method in React?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To render the initial DOM structure of a web page.",
+          "isCorrect": true
+        },
+        {
+          "id": "2",
+          "option": "To define the structure of a React component.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "To create a virtual DOM representation of a React component.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To update the state of a React component.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 4,
+      "video_title": "Introduction to React.js - Building User Interfaces",
+      "id": 2
+    },
+    {
+      "question": "What is the purpose of props in React components?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To define internal state within a component.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To manage asynchronous operations.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "To pass data from a parent component to a child component.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "To define the structure of a CSS stylesheet.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 4,
+      "video_title": "Introduction to React.js - Building User Interfaces",
+      "id": 3
+    },
+    {
+      "question": "What is the significance of the 'state' in a React component?",
+      "options": [
+        {
+          "id": "1",
+          "option": "It is used to manage external API requests.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "It is a reserved keyword in JavaScript.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "It represents the current data that can change over time.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "It defines the layout and styling of a component.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 4,
+      "video_title": "Introduction to React.js - Building User Interfaces",
+      "id": 4
+    },
+    {
+      "question": "What is the purpose of the 'componentDidMount()' lifecycle method in React?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To create a new instance of a React component.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To update the state of a component.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "To render a component on the DOM.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To perform actions after a component is inserted into the DOM.",
+          "isCorrect": true
+        }
+      ],
+      "video_id": 4,
+      "video_title": "Introduction to React.js - Building User Interfaces",
+      "id": 5
+    },
+    {
+      "question": "What is the purpose of a Promise in JavaScript?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To handle synchronous operations only.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To manage asynchronous operations and handle their results.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "To replace traditional for loops in JavaScript.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To define classes and objects in JavaScript.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 5,
+      "video_title": "Async JavaScript: Promises and Async/Await Explained",
+      "id": 6
+    },
+    {
+      "question": "What is the purpose of the 'async' keyword in JavaScript?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To define a function that returns a Promise.",
+          "isCorrect": true
+        },
+        {
+          "id": "2",
+          "option": "To create an anonymous function in JavaScript.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "To mark a variable as constant and immutable.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To initiate a network request using AJAX.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 5,
+      "video_title": "Async JavaScript: Promises and Async/Await Explained",
+      "id": 7
+    },
+    {
+      "question": "Which method is used to handle the result of a resolved Promise in JavaScript?",
+      "options": [
+        {
+          "id": "1",
+          "option": "resolve()",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "then()",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "catch()",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "await()",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 5,
+      "video_title": "Async JavaScript: Promises and Async/Await Explained",
+      "id": 8
+    },
+    {
+      "question": "What happens if a Promise is rejected?",
+      "options": [
+        {
+          "id": "1",
+          "option": "The JavaScript code execution pauses indefinitely.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "The error is silently ignored.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "The catch() method is invoked with the error.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "The Promise resolves with a null value.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 5,
+      "video_title": "Async JavaScript: Promises and Async/Await Explained",
+      "id": 9
+    },
+    {
+      "question": "What is the purpose of the 'await' keyword in async/await syntax?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To create a new Promise instance.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To pause the execution of a function until the Promise is resolved.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "To handle rejected Promises.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To execute a function asynchronously.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 5,
+      "video_title": "Async JavaScript: Promises and Async/Await Explained",
+      "id": 10
+    },
+    {
+      "question": "What is the purpose of a RESTful API?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To manage client-side logic in web applications.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To create visually appealing user interfaces.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "To provide a standardized way for applications to communicate and exchange data.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "To host and serve static files.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 6,
+      "video_title": "Building a RESTful API with Node.js and Express",
+      "id": 11
+    },
+    {
+      "question": "Which HTTP status code is returned when a resource is successfully created using POST?",
+      "options": [
+        {
+          "id": "1",
+          "option": "200 OK",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "201 Created",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "400 Bad Request",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "404 Not Found",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 6,
+      "video_title": "Building a RESTful API with Node.js and Express",
+      "id": 12
+    },
+    {
+      "question": "What does 'media query' refer to in the context of responsive web design?",
+      "options": [
+        {
+          "id": "1",
+          "option": "A type of JavaScript function.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "A CSS rule that targets specific screen sizes and devices.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "A method for loading images asynchronously.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "A keyword used to define variables in JavaScript.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 7,
+      "video_title": "Introduction to Responsive Web Design",
+      "id": 13
+    },
+    {
+      "question": "What is the purpose of the 'viewport' meta tag in HTML?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To specify the background color of a webpage.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To define the width and initial scale of the viewport for responsive design.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "To include external JavaScript libraries.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To add multimedia content to a webpage.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 7,
+      "video_title": "Introduction to Responsive Web Design",
+      "id": 14
+    },
+    {
+      "question": "What is the main advantage of using CSS Flexbox for layout?",
+      "options": [
+        {
+          "id": "1",
+          "option": "It provides animation effects for web pages.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "It simplifies the process of creating responsive layouts.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "It optimizes images for faster loading times.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "It replaces JavaScript for creating interactive components.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 8,
+      "video_title": "CSS Flexbox: Mastering Layouts",
+      "id": 15
+    },
+    {
+      "question": "Which property is used to align flex items along the cross-axis?",
+      "options": [
+        {
+          "id": "1",
+          "option": "justify-content",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "align-items",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "flex-direction",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "flex-wrap",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 8,
+      "video_title": "CSS Flexbox: Mastering Layouts",
+      "id": 16
+    },
+    {
+      "question": "What is the purpose of arrow functions in JavaScript?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To declare variables using a shorter syntax.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To create anonymous functions with concise syntax.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "To define complex algorithms in a single line of code.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "To handle asynchronous operations using Promises.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 9,
+      "video_title": "JavaScript ES6: Arrow Functions and Destructuring",
+      "id": 17
+    },
+    {
+      "question": "What is object destructuring in JavaScript?",
+      "options": [
+        {
+          "id": "1",
+          "option": "A way to break down a complex object into its individual properties.",
+          "isCorrect": true
+        },
+        {
+          "id": "2",
+          "option": "A technique for defining global variables.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "A process of creating objects using the 'new' keyword.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "A method for concatenating strings.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 9,
+      "video_title": "JavaScript ES6: Arrow Functions and Destructuring",
+      "id": 18
+    },
+    {
+      "question": "What is Vue.js?",
+      "options": [
+        {
+          "id": "1",
+          "option": "A programming language for backend development.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "A front-end JavaScript framework for building user interfaces.",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "A tool for creating databases in SQL.",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "A CSS preprocessor for styling web pages.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 10,
+      "video_title": "Getting Started with Vue.js - Build Interactive Web Apps",
+      "id": 19
+    },
+    {
+      "question": "What is the 'v-model' directive used for in Vue.js?",
+      "options": [
+        {
+          "id": "1",
+          "option": "To create custom directives.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "To define variables within Vue components.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "To establish two-way data binding between input elements and component data.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "To import external JavaScript libraries.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 10,
+      "video_title": "Getting Started with Vue.js - Build Interactive Web Apps",
+      "id": 20
+    },
+    {
+      "question": "What is Python primarily used for?",
+      "options": [
+        {
+          "id": "1",
+          "option": "Building hardware components.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "Creating dynamic web pages.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "Developing software applications and scripting.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "Managing network security.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 11,
+      "video_title": "Introduction to Python Programming",
+      "id": 21
+    },
+    {
+      "question": "Which of the following is a valid Python variable name?",
+      "options": [
+        {
+          "id": "1",
+          "option": "1variable",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "_myVariable",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "option": "my variable",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "option": "MyVariable123",
+          "isCorrect": true
+        }
+      ],
+      "video_id": 11,
+      "video_title": "Introduction to Python Programming",
+      "id": 22
+    },
+    {
+      "question": "What is version control in software development?",
+      "options": [
+        {
+          "id": "1",
+          "option": "A way to secure data against unauthorized access.",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "option": "A method for optimizing database queries.",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "option": "A system for tracking changes to source code and managing collaborative projects.",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "option": "A process of creating backups for critical files.",
+          "isCorrect": false
+        }
+      ],
+      "video_id": 12,
+      "video_title": "Using Git and GitHub: Version Control Made Easy",
+      "id": 23
     }
   ],
   "assignmentMark": [
@@ -264,6 +1043,39 @@
       "totalMark": 10,
       "mark": 0,
       "id": 2
+    },
+    {
+      "student_id": 12,
+      "student_name": "Forhad",
+      "video_id": "3",
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "totalQuiz": 1,
+      "totalWrong": 1,
+      "totalMark": 5,
+      "mark": 0,
+      "id": 3
+    },
+    {
+      "student_id": 2,
+      "student_name": "Mizanur Rahaman",
+      "video_id": "3",
+      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
+      "totalQuiz": 2,
+      "totalWrong": 2,
+      "totalMark": 10,
+      "mark": 0,
+      "id": 4
+    },
+    {
+      "student_id": 2,
+      "student_name": "Mizanur Rahaman",
+      "video_id": "1",
+      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "totalQuiz": 1,
+      "totalWrong": 1,
+      "totalMark": 5,
+      "mark": 0,
+      "id": 5
     }
   ]
 }

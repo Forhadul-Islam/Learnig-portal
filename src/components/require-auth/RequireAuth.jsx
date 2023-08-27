@@ -5,6 +5,11 @@ import useAuth from "../../hooks/useAuth";
 const RequireAuth = ({ allowedRole }) => {
   const auth = useAuth();
   const location = useLocation();
+  // function checkIsAllowed(role, auth){
+  //   for(let i =0; i<role.length; i++){
+  //     if(auth?.role == role[i]) return <Outlet />;
+  //   }
+  // }
 
   if (auth?.role == allowedRole) {
     return <Outlet />;

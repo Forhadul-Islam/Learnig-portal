@@ -28,11 +28,11 @@ const VideoDetails = ({ video = {} }) => {
     });
 
   return (
-    <div>
-      <h1 className="text-lg font-semibold tracking-tight text-slate-100">
+    <div className="mt-3">
+      <h1 className="text-lg font-semibold tracking-tight text-black">
         {title}
       </h1>
-      <h2 className=" pb-4 text-sm leading-[1.7142857] text-slate-400">
+      <h2 className=" pb-4 text-sm leading-[1.7142857] text-gray-800">
         Uploaded on {moment(createdAt).fromNow()}
       </h2>
 
@@ -64,8 +64,8 @@ const VideoDetails = ({ video = {} }) => {
         />
       )}
       <div>
-        <h4 className="mt-4">Description:</h4>
-        <p className="mt-1 text-sm text-slate-400 leading-6">{description}</p>
+        <h4 className="mt-4 text-black font-bold">Description:</h4>
+        <p className="mt-1 text-sm text-black leading-6">{description}</p>
       </div>
     </div>
   );

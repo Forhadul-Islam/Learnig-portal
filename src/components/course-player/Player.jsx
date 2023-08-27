@@ -5,7 +5,7 @@ const Player = ({ video = {} }) => {
   return (
     <iframe
       width="100%"
-      className="aspect-video"
+      className="aspect-video rounded-sm"
       src={url}
       title={title}
       frameBorder="0"

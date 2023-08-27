@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/image/learningportal.svg";
+import logo from "../assets/image/logo.png";
 import Error from "../components/ui/Error";
 import Loader from "../components/ui/Loader";
 import { useRegisterMutation } from "../features/auth/authApi";

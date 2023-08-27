@@ -6,6 +6,7 @@ import QuizTitle from "../../components/quiz/QuizTitle";
 import { useSubmitQuizMutation } from "../../features/quiz-mark/quizMarkApi";
 import { useGetQuizzesByVideoIdQuery } from "../../features/quizzes/quizzesApi";
 import useAuth from "../../hooks/useAuth";
+import Gradient from "../../components/ui/Gradient";
 
 const Quiz = () => {
   const { name: student_name, id: student_id } = useAuth();
@@ -146,10 +147,11 @@ const Quiz = () => {
   if (currentQuiz?.id && quizzes?.length > 0) {
     return (
       <>
-        <section className="py-6 bg-primary">
+        <Gradient />
+        <section className=" py-6 min-h-screen">
           <div className="mx-auto max-w-7xl px-5 lg:px-0">
             <QuizTitle title={title} />
-            <div className="space-y-8 ">
+            <div className="space-y-8 bg-primary rounded-md">
               <QuizQuestion
                 quiz={currentQuiz}
                 quizzesAns={quizzesAns}
@@ -159,11 +161,11 @@ const Quiz = () => {
               />
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               {index > 0 && index <= quizzes?.length - 1 && (
                 <button
                   onClick={() => setIndex(index - 1)}
-                  className="px-4  ml-0 py-2 rounded-full bg-cyan block  mt-8 hover:opacity-90 active:opacity-100 active:scale-95 "
+                  className="px-4  ml-0 py-2 rounded-full bg-indigo-600 block  mt-8 hover:opacity-90 active:opacity-100 active:scale-95 "
                 >
                   Previous
                 </button>
@@ -171,15 +173,15 @@ const Quiz = () => {
               {index < quizzes?.length - 1 ? (
                 <button
                   onClick={() => handleNextQiuz(index)}
-                  className="px-4 py-2 rounded-full bg-cyan block ml-auto mt-8 hover:opacity-90 active:opacity-100 active:scale-95 "
+                  className="px-4 py-2 rounded-full bg-indigo-600 block ml-auto mt-8 hover:opacity-90 active:opacity-100 active:scale-95 "
                 >
-                  next
+                  Next
                 </button>
               ) : (
                 <button
                   onClick={handleSubmitQuiz}
                   disabled={isSubmitting}
-                  className="px-4 py-2 rounded-full bg-cyan block ml-auto mt-8 hover:opacity-90 active:opacity-100 active:scale-95 "
+                  className="px-4 py-2 rounded-full bg-indigo-600 block ml-auto mt-8 hover:opacity-90 active:opacity-100 active:scale-95 "
                 >
                   Submit
                 </button>

@@ -14,8 +14,8 @@ const QuizQuestion = ({ quiz, handleSetQuizAns, quizzesAns }) => {
     return is?.id ? true : false;
   };
   return (
-    <div className="quiz">
-      <h4 className="question">Quiz 1 - {quiz?.question}</h4>
+    <div className="quiz bg-primary">
+      <h4 className="question text-black">Quiz 1 - {quiz?.question}</h4>
       <form className="quizOptions">
         {quiz?.options?.map((q) => (
           <Option
