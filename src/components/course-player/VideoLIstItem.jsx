@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 const VideoLIstItem = ({ video }) => {
   const { videoId } = useParams();
   const navigate = useNavigate();
   const { id, title, views, duration } = video;
+
   const handleVideoPlay = () => {
     navigate(`course-player/${id}`);
   };

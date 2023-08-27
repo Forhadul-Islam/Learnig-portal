@@ -2,10 +2,12 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import AssignmentTable from "../../components/admin/assignment/AssignmentTable";
 import { Link } from "react-router-dom";
+import Gradient from "../../components/ui/Gradient";
 
 const Assignment = () => {
   return (
     <>
+      <Gradient />
       <section className="py-6 bg-form-gradient min-h-screen">
         <div className="mx-auto max-w-full px-5 lg:px-20">
           <div className="px-3 py-20 bg-opacity-10">

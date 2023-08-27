@@ -33,7 +33,7 @@ const CodeBox = () => {
       ;
     `;
   return (
-    <div className="w-full  p-2 bg-transparent shadow-lg  rounded-md">
+    <div className="w-full h-full p-2 bg-transparent shadow-lg  rounded-md">
       <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
         {code2}
       </SyntaxHighlighter>

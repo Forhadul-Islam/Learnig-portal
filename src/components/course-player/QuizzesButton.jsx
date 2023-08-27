@@ -25,7 +25,7 @@ const QuizzesButton = ({ videoId }) => {
   if (isQuizAns) {
     if (quizAnswers[0]?.id) {
       return (
-        <button disabled className="px-3 font-bold py-1 outline_btn">
+        <button disabled className="px-3 font-bold py-1 outline_only_btn">
           কুইজ দিয়েছেন ! 👍
         </button>
       );
@@ -35,7 +35,7 @@ const QuizzesButton = ({ videoId }) => {
           to={`/quizzes/${videoId}`}
           className="px-3 font-md py-1 black_btn"
         >
-          কুইজে অংশগ্রহণ করুন
+          🛩️ কুইজে অংশগ্রহণ করুন
         </Link>
       );
     }

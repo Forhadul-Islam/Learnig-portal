@@ -24,7 +24,7 @@ const AssignmentButton = ({
         <button
           onClick={() => setIsmodalOpen(!isModalOpen)}
           disabled
-          className="px-3 font-bold py-1 outlien_btn"
+          className="px-3 font-bold py-1 outlien_only_btn"
         >
           এসাইনমেন্ট দিয়েছেন !
         </button>
@@ -35,7 +35,7 @@ const AssignmentButton = ({
           onClick={() => setIsmodalOpen(!isModalOpen)}
           className="px-3 font-md py-1 black_btn"
         >
-          এসাইনমেন্ট
+          📑 এসাইনমেন্ট
         </button>
       );
     }

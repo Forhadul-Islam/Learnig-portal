@@ -45,26 +45,28 @@ function App() {
             path="/*"
             element={
               <>
-                <Navbar />
+                <Navbar student />
                 <RequireAuth allowedRole="student" />
               </>
             }
           >
             <Route path="leader-board" element={<LeaderBoard />} />
+            <Route path="course-player" element={<CoursePlayer />} />
             <Route path="course-player/:videoId" element={<CoursePlayer />} />
             <Route path="quizzes/:videoId" element={<Quiz />} />
           </Route>
           // admin can also access the course content
           <Route
-            path="/*"
+            path="/"
             element={
               <>
-                <Navbar />
+                <Navbar admin />
                 <RequireAuth allowedRole="admin" />
               </>
             }
           >
             <Route path="leader-board" element={<LeaderBoard />} />
+            <Route path="course-player" element={<CoursePlayer />} />
             <Route path="course-player/:videoId" element={<CoursePlayer />} />
             <Route path="quizzes/:videoId" element={<Quiz />} />
           </Route>
@@ -73,7 +75,7 @@ function App() {
             path="/admin/*"
             element={
               <>
-                <Navbar />
+                <Navbar admin />
                 <RequireAuth allowedRole="admin" />
               </>
             }

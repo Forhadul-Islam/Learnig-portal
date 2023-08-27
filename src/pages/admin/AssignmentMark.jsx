@@ -2,6 +2,7 @@ import React from "react";
 import AssignmentMarkTable from "../../components/admin/assignment-mark/AssignmentMarkTable";
 import { useGetAssignmentMarkQuery } from "../../features/assignment-mark/assignmentMarkApi";
 import Error from "../../components/ui/Error";
+import Gradient from "../../components/ui/Gradient";
 
 const AssignmentMark = () => {
   //get assignment marks
@@ -34,6 +35,7 @@ const AssignmentMark = () => {
   // if (!isError) return <Error message="Sorry! Couldn't load data." />;
   return (
     <>
+      <Gradient />
       <section className="py-6 min-h-screen">
         <div className="mx-auto max-w-full px-5 lg:px-20">
           <div className="px-3 py-20 bg-opacity-10">

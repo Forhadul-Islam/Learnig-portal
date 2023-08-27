@@ -2,11 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import { motion } from "framer-motion";
+import Gradient from "../../components/ui/Gradient";
 
 const Dashboard = () => {
   return (
     <>
-      <section className="py-6 bg-form-gradient">
+      <Gradient />
+      <section className="py-6 min-h-screen bg-form-gradient">
         <div className="mx-auto max-w-7xl px-5 lg:px-0">
           <div className="px-3 md:lg:xl:px-40  py-20 bg-opacity-10">
             <motion.div

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGetVideosQuery } from "../../features/videos/videosApi";
 import VideoItemSkeleton from "../ui/skeleton/VideoItemSkeleton";
 import VideoLIstItem from "./VideoLIstItem";
+import { useParams } from "react-router-dom";
 
 const VideoList = () => {
   const { data: videos, isFetching, isError, isSuccess } = useGetVideosQuery();
