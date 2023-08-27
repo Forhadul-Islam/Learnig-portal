@@ -6,14 +6,16 @@ import CodeBox from "../components/home/CodeBox";
 import { motion } from "framer-motion";
 import SideAnimation from "../components/home/SideAnimation";
 import useAuth from "../hooks/useAuth";
+import AnimatePage from "../components/ui/animation/AnimatePage";
+import IntroSection from "../components/home/IntroSection";
 
 const Home = () => {
   const { role } = useAuth();
 
   return (
-    <>
+    <AnimatePage>
       <Gradient />
-      <Navbar admin={role == "admin"} student={role == "student"} />
+      <Navbar />
       <div className="mx-10 mt-16 min-h-screen">
         <main className=" grid md:grid-cols-7">
           <section className="w-full md:col-span-4 my-auto flex md:items-start items-center   flex-col">
@@ -60,9 +62,10 @@ const Home = () => {
               />
             </svg>
           </section>
+          {/* <IntroSection /> */}
         </main>
       </div>
-    </>
+    </AnimatePage>
   );
 };
 

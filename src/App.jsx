@@ -21,9 +21,11 @@ import CreateAndEditVideo from "./pages/admin/CreateAndEditVideo";
 import CreateOrEditAssignment from "./pages/admin/CreateOrEditAssignment";
 import CreateOrEditQuizzes from "./pages/admin/CreateOrEditQuizzes";
 import BG from "../src/assets/image/bgg.png";
+import useAuth from "./hooks/useAuth";
 
 function App() {
   const authChecked = useAuthCheck();
+  const user = useAuth();
 
   if (!authChecked)
     return (
@@ -46,22 +48,10 @@ function App() {
             element={
               <>
                 <Navbar student />
-                <RequireAuth allowedRole="student" />
-              </>
-            }
-          >
-            <Route path="leader-board" element={<LeaderBoard />} />
-            <Route path="course-player" element={<CoursePlayer />} />
-            <Route path="course-player/:videoId" element={<CoursePlayer />} />
-            <Route path="quizzes/:videoId" element={<Quiz />} />
-          </Route>
-          // admin can also access the course content
-          <Route
-            path="/"
-            element={
-              <>
-                <Navbar admin />
-                <RequireAuth allowedRole="admin" />
+                <RequireAuth
+                  allowedRole="student"
+                  adminAlso={user?.role == "admin"}
+                />
               </>
             }
           >

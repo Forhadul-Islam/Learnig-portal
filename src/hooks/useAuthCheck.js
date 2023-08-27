@@ -5,10 +5,9 @@ import { userLoggedIn } from "../features/auth/authSlice";
 export default function useAuthCheck() {
   const dispatch = useDispatch();
   const [authChecked, setAuthChecked] = useState(false);
+  const localAuth = localStorage?.getItem("auth");
 
   useEffect(() => {
-    const localAuth = localStorage?.getItem("auth");
-
     if (localAuth) {
       const auth = JSON.parse(localAuth);
       if (auth?.accessToken && auth?.user) {
@@ -21,7 +20,7 @@ export default function useAuthCheck() {
       }
     }
     setAuthChecked(true);
-  }, [dispatch, setAuthChecked]);
+  }, [localAuth, dispatch, setAuthChecked]);
 
   return authChecked;
 }

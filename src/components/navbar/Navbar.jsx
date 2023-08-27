@@ -5,7 +5,7 @@ import logo from "../../assets/image/logo.png";
 import { userLoggedOut } from "../../features/auth/authSlice";
 import { motion } from "framer-motion";
 
-const Navbar = ({ admin, student }) => {
+const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
@@ -14,7 +14,6 @@ const Navbar = ({ admin, student }) => {
     dispatch(userLoggedOut());
     navigate("/");
   };
-
   return (
     <nav className="shadow-sm z-10">
       <div className="max-w-7xl px-5 lg:px-0 mx-auto flex justify-between py-3">
@@ -24,10 +23,10 @@ const Navbar = ({ admin, student }) => {
 
         <div className="flex items-center gap-3">
           <h2 className="font-medium text-black">
-            {user?.name && `| ${user?.name} |`}{" "}
+            {user?.name && `| ${user?.name} |`}
           </h2>
           {/* //student part */}
-          {student && (
+          {user?.role == "student" && (
             <div className="flex flex-row gap-2">
               <motion.div>
                 <Link to="/admin" className="outline_only_btn">
@@ -40,7 +39,7 @@ const Navbar = ({ admin, student }) => {
             </div>
           )}
           {/* admin part */}
-          {admin && (
+          {user?.role == "admin" && (
             <div className="flex flex-row gap-2">
               <motion.div>
                 <Link to="/admin" className="outline_only_btn">

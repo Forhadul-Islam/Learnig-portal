@@ -7,7 +7,7 @@ const PublicRoute = () => {
   const location = useLocation();
 
   if (auth?.role == "student") {
-    return <Navigate to="/course-player" replace />;
+    return <Navigate to="/" replace />;
   } else if (auth?.role == "admin") {
     return <Navigate to="/admin" replace />;
   } else return <Outlet />;

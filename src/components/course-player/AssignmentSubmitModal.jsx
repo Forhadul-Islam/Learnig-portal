@@ -42,7 +42,7 @@ const AssignmentSubmitModal = ({
 
   useEffect(() => {
     if (isSuccess) setIsmodalOpen(false);
-  });
+  }, [isSuccess]);
 
   const handleSubmitAssignment = (e) => {
     e.preventDefault();

@@ -13,6 +13,41 @@
       "name": "Mizanur Rahaman",
       "role": "student",
       "id": 2
+    },
+    {
+      "email": "mizanur10@gmail.com",
+      "password": "$2a$10$hLyg2wSkOsH8Vvj5Q7nseO8JlPlL0sulQctBq8eLPB/rUROU/KeJe",
+      "name": "Mizanur Rahaman",
+      "role": "student",
+      "id": 3
+    },
+    {
+      "email": "miz@yahoo.com",
+      "password": "$2a$10$etWqz4SsbsLR3smOvdWfG.weR7l.WKZfmiwsunHUFh9Ww7OZEhfiO",
+      "name": "FARHANA AKTHER",
+      "role": "student",
+      "id": 4
+    },
+    {
+      "email": "foof@gmaill.com",
+      "password": "$2a$10$ln7nEDeLTGM50wrsGqacaeYfFHYTAtBC2zuul6oeI/7/ZIipA6oN.",
+      "name": "Mizanur Rahaman",
+      "role": "student",
+      "id": 5
+    },
+    {
+      "email": "fafa@gmail.com",
+      "password": "$2a$10$qGDQQK1fZoW5oGMShrTytuyIbzN6srbqjVmQSKJNlxdHVwhj/loba",
+      "name": "fafa",
+      "role": "student",
+      "id": 6
+    },
+    {
+      "email": "mizanforhad@yahoo.com",
+      "password": "$2a$10$xHQoEKxnfHNnCB398QqaYePYFQUjwk15uuLNgTbaI4eNfaHc4uDRO",
+      "name": "Slow Horses (Deluxe Edition)",
+      "role": "student",
+      "id": 7
     }
   ],
   "videos": [

@@ -4,6 +4,7 @@ import VideoList from "../../components/course-player/VideoList";
 import Gradient from "../../components/ui/Gradient";
 import { useGetVideosQuery } from "../../features/videos/videosApi";
 import { useNavigate, useParams } from "react-router-dom";
+import AnimatePage from "../../components/ui/animation/AnimatePage";
 
 const CoursePlayer = () => {
   const { videoId } = useParams();
@@ -15,11 +16,11 @@ const CoursePlayer = () => {
       if (isSuccess && videos?.length > 0) {
         let uri = `/course-player/${videos[0]?.id}`;
         navigate(uri);
-      }
+      } else navigate("/course-player");
     }
   }, [videoId, isSuccess]);
   return (
-    <>
+    <AnimatePage>
       <Gradient />
       <section className="py-6">
         <div className="mx-auto max-w-7xl px-5 lg:px-0">
@@ -29,7 +30,7 @@ const CoursePlayer = () => {
           </div>
         </div>
       </section>
-    </>
+    </AnimatePage>
   );
 };
 
