@@ -5,7 +5,7 @@ export default function TextArea({ title, ...attributes }) {
       <div className="mt-1">
         <textarea
           {...attributes}
-          rows="3"
+          rows="10"
           className="bg-gray-900 shadow-sm  pl-2 focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-500 rounded-md"
         ></textarea>
       </div>

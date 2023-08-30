@@ -20,153 +20,164 @@
       "name": "Mizanur Rahaman",
       "role": "student",
       "id": 3
-    },
-    {
-      "email": "miz@yahoo.com",
-      "password": "$2a$10$etWqz4SsbsLR3smOvdWfG.weR7l.WKZfmiwsunHUFh9Ww7OZEhfiO",
-      "name": "FARHANA AKTHER",
-      "role": "student",
-      "id": 4
-    },
-    {
-      "email": "foof@gmaill.com",
-      "password": "$2a$10$ln7nEDeLTGM50wrsGqacaeYfFHYTAtBC2zuul6oeI/7/ZIipA6oN.",
-      "name": "Mizanur Rahaman",
-      "role": "student",
-      "id": 5
-    },
-    {
-      "email": "fafa@gmail.com",
-      "password": "$2a$10$qGDQQK1fZoW5oGMShrTytuyIbzN6srbqjVmQSKJNlxdHVwhj/loba",
-      "name": "fafa",
-      "role": "student",
-      "id": 6
-    },
-    {
-      "email": "mizanforhad@yahoo.com",
-      "password": "$2a$10$xHQoEKxnfHNnCB398QqaYePYFQUjwk15uuLNgTbaI4eNfaHc4uDRO",
-      "name": "Slow Horses (Deluxe Edition)",
-      "role": "student",
-      "id": 7
     }
   ],
   "videos": [
     {
-      "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
-      "url": "https://www.youtube.com/embed/dD9O8DnIBj4",
-      "duration": "5:30",
-      "views": "51.2K",
-      "createdAt": "2023-08-26T20:51:20.648Z",
-      "id": 1
-    },
-    {
-      "title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
-      "description": "JavaScript Tips and Tricks - JavaScript Job Interview Questions - Bangla Tutorial \nIn this video, I have shown 8 more JavaScript pro tips that will make a JavaScript Developer's life easier.",
-      "url": "https://www.youtube.com/embed/E9_R88eKcBM",
-      "duration": "31:30",
-      "views": "95.2K",
-      "createdAt": "2023-04-07T13:40:11.377Z",
-      "id": 2
-    },
-    {
       "title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
-      "description": "In this tutorial, we will learn how to build a responsive navigation menu using CSS and JavaScript. We will start by creating a basic navigation menu using HTML and CSS, and then we will add JavaScript to make it responsive. By the end of this video, you will have a fully functional responsive navigation menu that you can use in your own projects.",
+      "description": "Creating a responsive website involves designing and coding a site that adapts seamlessly to various screen sizes and devices. Begin by planning a flexible layout using CSS Grid or Flexbox, allowing content to rearrange intelligently. Utilize media queries to set breakpoints where design changes are triggered, ensuring optimal presentation on different devices. Optimize images for different resolutions and load times. Implement relative units for fonts and dimensions to maintain proportional elements. Test the website across devices and browsers to ensure consistent functionality and aesthetics. The goal is to provide users with an optimal experience regardless of the device they're using, enhancing accessibility and engagement.",
       "url": "https://www.youtube.com/embed/8QKOaTYvYUA",
       "duration": "12:30",
       "views": "22.5K",
       "createdAt": "2023-04-07T18:33:31.982Z",
-      "id": 3
+      "id": 3,
+      "thumbnail": "https://i3.ytimg.com/vi/8QKOaTYvYUA/maxresdefault.jpg",
+      "author": "Michael Johnson",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
     },
     {
       "title": "Introduction to React.js - Building User Interfaces",
-      "description": "Learn the basics of React.js and how to build dynamic user interfaces with ease.",
+      "description": "Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
       "url": "https://www.youtube.com/embed/XxVg_s8xAms",
       "duration": "15:45",
       "views": "128.7K",
       "createdAt": "2023-09-01T10:20:00.000Z",
-      "id": 4
+      "id": 4,
+      "thumbnail": "https://i.ytimg.com/vi/Y6aYx_KKM7A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDZdGhmpg3F2WVHgOr418cVRLmxfw",
+      "author": "Emily Davis",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
     },
     {
       "title": "Async JavaScript: Promises and Async/Await Explained",
-      "description": "Dive into asynchronous programming in JavaScript using Promises and the modern async/await syntax.",
+      "description": "Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
       "url": "https://www.youtube.com/embed/F_1vXT9sTgg",
       "duration": "20:10",
       "views": "95.3K",
       "createdAt": "2023-09-02T14:30:00.000Z",
-      "id": 5
+      "id": 5,
+      "thumbnail": "https://i.ytimg.com/an_webp/-uleG_Vecis/mqdefault_6s.webp?du=3000&sqp=CNy4tqcG&rs=AOn4CLCmfIvKWlAR4yOP79vlbCR1vnM57g",
+      "author": "David Williams",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
     },
     {
       "title": "Building a RESTful API with Node.js and Express",
-      "description": "Create a RESTful API using Node.js and Express, allowing for data manipulation and retrieval.",
-      "url": "https://www.youtube.com/embed/gbIpZG42Fms",
+      "description": "Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
+      "url": "https://www.youtube.com/watch?v=XGa4onZP66Q&pp=ygUDYXBp",
       "duration": "18:55",
       "views": "72.8K",
       "createdAt": "2023-09-03T09:15:00.000Z",
-      "id": 6
+      "id": 6,
+      "thumbnail": "https://i.ytimg.com/an_webp/ShcR4Zfc6Dw/mqdefault_6s.webp?du=3000&sqp=COintqcG&rs=AOn4CLCrCUmM7qlRYdZE8RSK5KVkRXydTw",
+      "author": "Sarah Martinez",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "description": "Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
+      "url": "https://www.youtube.com/embed/dD9O8DnIBj4",
+      "duration": "5:30",
+      "views": "51.2K",
+      "createdAt": "2023-08-26T20:51:20.648Z",
+      "id": 1,
+      "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
+      "author": "John Doe",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
+      "description": "Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
+      "url": "https://www.youtube.com/embed/E9_R88eKcBM",
+      "duration": "31:30",
+      "views": "95.2K",
+      "createdAt": "2023-04-07T13:40:11.377Z",
+      "id": 2,
+      "thumbnail": "https://i3.ytimg.com/vi/E9_R88eKcBM/maxresdefault.jpg",
+      "author": "Jane Smith",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
     },
     {
       "title": "Introduction to Responsive Web Design",
-      "description": "Learn the principles of responsive web design and create websites that adapt to various screen sizes.",
-      "url": "https://www.youtube.com/embed/3t8MeE8Ik4E",
+      "description": "Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
+      "url": "https://youtu.be/r5NQecwZs1A?si=dXgXHx-htdYj-XVJ",
       "duration": "14:20",
       "views": "56.4K",
       "createdAt": "2023-09-04T12:40:00.000Z",
-      "id": 7
+      "id": 7,
+      "thumbnail": "https://i.ytimg.com/an_webp/r5NQecwZs1A/mqdefault_6s.webp?du=3000&sqp=CICptqcG&rs=AOn4CLCuRCDBXuognFqmaX8qINwcevAfkw",
+      "author": "Daniel Wilson",
+      "authorImage": "https://yt3.ggpht.com/ytc/AOPolaQ2iMmw9cWFFjnwa13nBwtZQbl-AqGYkkiTqNaTLg=s88-c-k-c0x00ffffff-no-rj"
     },
     {
       "title": "CSS Flexbox: Mastering Layouts",
-      "description": "Master the art of building flexible layouts using CSS Flexbox to create responsive designs.",
+      "description": "Master the art of building flexible Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
       "url": "https://www.youtube.com/embed/Zv1m-2tXbhw",
       "duration": "22:30",
       "views": "82.1K",
       "createdAt": "2023-09-05T16:05:00.000Z",
-      "id": 8
+      "id": 8,
+      "thumbnail": "https://i.ytimg.com/an_webp/-uleG_Vecis/mqdefault_6s.webp?du=3000&sqp=CNy4tqcG&rs=AOn4CLCmfIvKWlAR4yOP79vlbCR1vnM57g",
+      "author": "Alex Turner",
+      "authorImage": "https://example.com/authors/alex_turner.jpg"
     },
     {
       "title": "JavaScript ES6: Arrow Functions and Destructuring",
-      "description": "Explore modern JavaScript features like arrow functions and destructuring for concise and efficient code.",
-      "url": "https://www.youtube.com/embed/6sQyHt-fJr0",
+      "description": "Explore modern JavaScript features like arrow functions and destructuring for concise and efficient code.Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users.",
+      "url": "https://www.youtube.com/watch?v=trCfAGpef5w&pp=ygUKd2ViIGRlc2lnbg%3D%3D",
       "duration": "12:15",
       "views": "44.9K",
       "createdAt": "2023-09-06T19:30:00.000Z",
-      "id": 9
+      "id": 9,
+      "thumbnail": "https://i.ytimg.com/an_webp/X8ipUgXH6jw/mqdefault_6s.webp?du=3000&sqp=CKCytqcG&rs=AOn4CLBPBpBzX2nTVQ5-nOeOLbRBYyxHLA",
+      "author": "Sophia Adams",
+      "authorImage": "https://example.com/authors/sophia_adams.jpg"
     },
     {
       "title": "Getting Started with Vue.js - Build Interactive Web Apps",
-      "description": "Begin your journey with Vue.js and learn how to build interactive web applications with ease.",
+      "description": "Begin your journey with Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users. Vue.js and learn how to build interactive web applications with ease...",
       "url": "https://youtu.be/1GNsWa_EZdw?si=zaVUqUpRJTrI-Jtp",
       "duration": "17:50",
       "views": "61.7K",
       "createdAt": "2023-08-26T22:46:57.731Z",
-      "id": 10
+      "id": 10,
+      "thumbnail": "https://i3.ytimg.com/vi/1GNsWa_EZdw/maxresdefault.jpg",
+      "author": "Oliver Green",
+      "authorImage": "https://example.com/authors/oliver_green.jpg"
     },
     {
       "title": "Introduction to Python Programming",
-      "description": "Discover the basics of Python programming and start your programming journey with a versatile language.",
-      "url": "https://www.youtube.com/embed/jyT9fYFpmd8",
+      "description": "Discover the basics Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users. of Python programming and start your programming journey with a versatile language...",
+      "url": "https://www.youtube.com/watch?v=bBC-nXj3Ng4",
       "duration": "19:25",
       "views": "38.2K",
       "createdAt": "2023-09-08T08:05:00.000Z",
-      "id": 11
+      "id": 11,
+      "thumbnail": "https://i.ytimg.com/an_webp/bBC-nXj3Ng4/mqdefault_6s.webp?du=3000&sqp=CKqktqcG&rs=AOn4CLD6dvnPftgEZGRZRvz4bmn3tRU_ZQ",
+      "author": "William Johnson",
+      "authorImage": "https://example.com/authors/william_johnson.jpg"
     },
     {
       "title": "Using Git and GitHub: Version Control Made Easy",
-      "description": "Learn how to effectively use Git and GitHub for version control and collaborative software development.",
+      "description": "Learn how to effectively Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users. use Git and GitHub for version control and collaborative software development...",
       "url": "https://www.youtube.com/embed/uUuTYDg9XoI",
       "duration": "16:40",
       "views": "49.6K",
       "createdAt": "2023-09-09T14:20:00.000Z",
-      "id": 12
+      "id": 12,
+      "thumbnail": "https://i3.ytimg.com/vi/uUuTYDg9XoI/maxresdefault.jpg",
+      "author": "Ava White",
+      "authorImage": "https://example.com/authors/ava_white.jpg"
     },
     {
       "title": "Building a Simple To-Do App with React Native",
-      "description": "Create a simple to-do app using React Native and build cross-platform mobile applications.",
+      "description": "Create a simple to-do app using React Native and build Creating a responsive website involves a meticulous interplay of design and development strategies to ensure an optimal viewing experience across a wide spectrum of devices. By leveraging fluid grids, flexible layouts, and media queries, the design intelligently adapts to varying screen sizes, enhancing usability. Adopting a mobile-first approach prioritizes essential content for smaller screens and progressively enriches the experience as the viewport expands. Thoughtful considerations like fluid typography, touch-friendly navigation, and optimized images further contribute to seamless interactivity. Regular testing across devices and browsers guarantees consistent performance, making responsive design a cornerstone of modern web development that caters to the diverse habits of today's users. cross-platform mobile applications...",
       "url": "https://www.youtube.com/embed/0-S5a0eXPoc",
       "duration": "14:50",
       "views": "29.8K",
       "createdAt": "2023-09-10T18:00:00.000Z",
-      "id": 13
+      "id": 13,
+      "thumbnail": "https://i3.ytimg.com/vi/0-S5a0eXPoc/maxresdefault.jpg",
+      "author": "Noah Taylor",
+      "authorImage": "https://example.com/authors/noah_taylor.jpg"
     }
   ],
   "assignments": [
@@ -1034,83 +1045,15 @@
     {
       "assignment_id": 1,
       "title": "create landing page",
-      "student_name": "Mizanur",
-      "student_id": 8,
+      "student_name": "Mizanur Rahaman",
+      "student_id": 2,
       "totalMark": 100,
-      "mark": "10",
-      "repo_link": "sd",
-      "live_link": "sadd",
-      "status": "published",
+      "mark": 0,
+      "repo_link": "test repo 2",
+      "live_link": "fdfsfd",
+      "status": "pending",
       "id": 1
-    },
-    {
-      "assignment_id": 1,
-      "title": "create landing page",
-      "student_name": "haha",
-      "student_id": 11,
-      "totalMark": 100,
-      "mark": "80",
-      "repo_link": "fdsfsdf",
-      "live_link": "test live link",
-      "status": "published",
-      "id": 2
     }
   ],
-  "quizMark": [
-    {
-      "student_id": 8,
-      "student_name": "Mizanur",
-      "video_id": "1",
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 3,
-      "totalWrong": 1,
-      "totalMark": 15,
-      "mark": 10,
-      "id": 1
-    },
-    {
-      "student_id": 11,
-      "student_name": "haha",
-      "video_id": "1",
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 2,
-      "totalWrong": 2,
-      "totalMark": 10,
-      "mark": 0,
-      "id": 2
-    },
-    {
-      "student_id": 12,
-      "student_name": "Forhad",
-      "video_id": "3",
-      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
-      "totalQuiz": 1,
-      "totalWrong": 1,
-      "totalMark": 5,
-      "mark": 0,
-      "id": 3
-    },
-    {
-      "student_id": 2,
-      "student_name": "Mizanur Rahaman",
-      "video_id": "3",
-      "video_title": "How to Build a Responsive Navigation Menu with CSS and JavaScript",
-      "totalQuiz": 2,
-      "totalWrong": 2,
-      "totalMark": 10,
-      "mark": 0,
-      "id": 4
-    },
-    {
-      "student_id": 2,
-      "student_name": "Mizanur Rahaman",
-      "video_id": "1",
-      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
-      "totalQuiz": 1,
-      "totalWrong": 1,
-      "totalMark": 5,
-      "mark": 0,
-      "id": 5
-    }
-  ]
+  "quizMark": []
 }

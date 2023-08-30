@@ -14,7 +14,7 @@ const RequireAuth = ({ allowedRole, adminAlso }) => {
   if (auth?.role == allowedRole || adminAlso) {
     return <Outlet />;
   }
-  return <Navigate to="/login" state={{ from: location }} replace />;
+  return <Navigate to="/login" state={{ from: location }} replace={true} />;
 };
 
 export default RequireAuth;

@@ -16,13 +16,15 @@ const Navbar = () => {
   };
   return (
     <nav className="shadow-sm z-10">
-      <div className="max-w-7xl px-5 lg:px-0 mx-auto flex justify-between py-3">
+      <div className="max-w-7xl  px-5 lg:px-0 mx-auto block md:flex justify-between py-3">
         <Link to="/">
           <img className="h-10" src={logo} />
         </Link>
 
-        <div className="flex items-center gap-3">
-          <h2 className="font-medium text-black">
+        <div className=" flex md:hidden w-full h-[1px] mb-2 bg-slate-600/30" />
+
+        <div className="flex items-end justify-end md:items-center gap-3">
+          <h2 className="md:flex hidden font-medium text-black">
             {user?.name && `| ${user?.name} |`}
           </h2>
           {/* //student part */}

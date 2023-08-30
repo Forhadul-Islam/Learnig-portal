@@ -8,6 +8,7 @@ import SideAnimation from "../components/home/SideAnimation";
 import useAuth from "../hooks/useAuth";
 import AnimatePage from "../components/ui/animation/AnimatePage";
 import IntroSection from "../components/home/IntroSection";
+import AllCoursesSection from "../components/home/AllCoursesSection";
 
 const Home = () => {
   const { role } = useAuth();
@@ -16,15 +17,17 @@ const Home = () => {
     <AnimatePage>
       <Gradient />
       <Navbar />
-      <div className="mx-10 mt-16 min-h-screen">
-        <main className=" grid md:grid-cols-7">
+      <div className="mx-10 mt-12 min-h-screen">
+        <main className=" grid  md:grid-cols-7">
           <section className="w-full md:col-span-4 my-auto flex md:items-start items-center   flex-col">
-            <h1 className="head_text ">
-              Learn & Prepare
-              <br className="max-md:hidden" />
-              <span className="orange_gradient">For the Next Interview</span>
-            </h1>
-            <p className=" desc ">
+            <div className="text-center md:text-left">
+              <h1 className="head_text ">
+                Learn & Prepare
+                <br className="" />
+                <span className=" orange_gradient">For the Next Interview</span>
+              </h1>
+            </div>
+            <p className="text-center md:text-left desc ">
               Welcome to our Learning Portal, where programmers elevate their
               skills and excel in interviews. Explore expert-led tutorials,
               tackle coding challenges, and gain the confidence needed to ace
@@ -39,7 +42,7 @@ const Home = () => {
               Go to Course
             </Link>
           </section>
-          <section className="md:col-span-3 col-span-full mt-25 md:mt-5  text-black">
+          <section className="md:flex hidden md:col-span-3 col-span-full mt-25 md:mt-5  text-black">
             {/* <motion.div
               initial={{ scale: 1 }}
               animate={{
@@ -64,6 +67,7 @@ const Home = () => {
           </section>
           {/* <IntroSection /> */}
         </main>
+        <AllCoursesSection />
       </div>
     </AnimatePage>
   );

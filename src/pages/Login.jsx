@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate, redirect } from "react-router-dom";
 import logo from "../assets/image/logo.png";
 import Error from "../components/ui/Error";
 import Loader from "../components/ui/Loader";
@@ -18,12 +18,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [login, { isLoading, isError, isSuccess, error }] = useLoginMutation();
+  const [isAdmin, setIsAdmin] = useState(true);
 
+  console.log(from);
   useEffect(() => {
     if (isError) {
       setErrorMessage(error?.data);
     }
-    if (isSuccess) navigate(from);
+    if (isSuccess) {
+      navigate(from);
+    }
   }, [isError, isSuccess]);
 
   const handleLogin = (e) => {
@@ -31,8 +35,18 @@ const Login = () => {
     if (email && password) login({ email, password });
   };
 
+  useEffect(() => {
+    if (isAdmin) {
+      setEmail("admin@gmail.com");
+      setPassword("password");
+    } else {
+      setEmail("mizanur@gmail.com");
+      setPassword("password");
+    }
+  }, [isAdmin]);
+
   return (
-    <>
+    <AnimatePage>
       <Gradient />
 
       {/* <section className=" py-6 bg-primary  h-screen grid place-items-center">
@@ -123,9 +137,9 @@ const Login = () => {
         </div>
       </section> */}
 
-      <AnimatePage>
+      <>
         <div className="h-screen md:flex">
-          <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+          <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-pink-600  to-violet-700 i justify-around items-center hidden">
             <div>
               <h1 className="text-white font-bold text-4xl ">Start Here,</h1>
               <p className="text-white mt-1">
@@ -143,7 +157,7 @@ const Login = () => {
             <div className="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
             <div className="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
           </div>
-          <div className="flex md:w-1/2 justify-center py-10 items-center bg-white">
+          <div className="flex h-screen md:w-1/2 justify-center py-10 items-center bg-white">
             <form onSubmit={(e) => handleLogin(e)} className="bg-white">
               <Link to="/" className="flex items-center  mb-7">
                 <img src={logo} alt="CoderBiz" className="w-3/5" />
@@ -226,11 +240,22 @@ const Login = () => {
                   />
                 )}
               </div>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setIsAdmin((prev) => !prev)}
+                  className="block w-full bg-pink-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+                >
+                  {isAdmin
+                    ? "👲 LogIn as an Admin 🔥"
+                    : "🙅‍♂️ LogIn as a Learner 👨"}
+                </button>
+              </div>
             </form>
           </div>
         </div>
-      </AnimatePage>
-    </>
+      </>
+    </AnimatePage>
   );
 };
 

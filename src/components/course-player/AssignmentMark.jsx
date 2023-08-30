@@ -22,10 +22,10 @@ const AssignmentMark = ({ assignment_id, student_id }) => {
   if (isSuccess && assignmentMark?.length > 0) {
     return (
       <div className="mt-6 py-4 flex bg-opacity-10 border-t border-b border-gray-700">
-        <ul className="border-2 border-indigo-600 px-2 rounded-full">
+        <ul className="border-2 bg-gray-90 border-indigo-600 px-2 text-white  rounded-full">
           <li className="py-1 flex justify-center items-center">
-            Assignment Mark -
-            <span className="bg-pink-800 mx-2 rounded-full px-3">
+            <span className="text-black font-semibold">Assignment Mark -</span>
+            <span className="bg-indigo-700 mx-2 rounded-full px-3">
               {assignmentMark[0]?.status == "published"
                 ? assignmentMark[0]?.mark
                 : "Pending"}
